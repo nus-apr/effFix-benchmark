@@ -601,7 +601,7 @@
 },
  {
    "index": 31,
-   "subject": "LinuxKernel-v5.0-rc8",
+   "subject": "linux-kernel-5",
    "bug_id": "null-ptr-1",
    "bug_type": "Null Pointer Dereference",
    "source": {
