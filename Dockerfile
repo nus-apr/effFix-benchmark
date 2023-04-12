@@ -26,7 +26,11 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends
     gettext \
     libtasn1-dev \
     libffi-dev \
-    libelf-dev
+    libelf-dev \
+    wget \
+    ca-certificates
+
+
 
 
 
