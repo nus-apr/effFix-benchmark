@@ -11,7 +11,7 @@ mkdir dev-patch
 
 mkdir dev-patch
 
-project_url=https://github.com/openssl/openssl.git
+project_url=https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/
 bug_commit_id=v5.0-rc8
 
 cd $dir_name
