@@ -1,0 +1,624 @@
+[
+ {
+   "index": 1,
+   "subject": "p11-kit",
+   "bug_id": "memory-leak-1",
+   "bug_type": "Memory Leak",
+   "source": {
+      "src-file": "trust/asn1.c",
+      "procedure": "p11_asn1_cache_take",
+      "line": 350,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "trust/asn1.c",
+      "procedure": "p11_asn1_cache_take",
+      "line": 356,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": []
+},
+ {
+   "index": 2,
+   "subject": "snort",
+   "bug_id": "memory-leak-2",
+   "bug_type": "Memory Leak",
+   "source": {
+      "src-file": "src/sfutil/ipobj.c",
+      "procedure": "ipset_add",
+      "line": 123,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "src/sfutil/ipobj.c",
+      "procedure": "ipset_add",
+      "line": 130,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": []
+},
+ {
+   "index": 3,
+   "subject": "snort",
+   "bug_id": "memory-leak-3",
+   "bug_type": "Memory Leak",
+   "source": {
+      "src-file": "src/sfutil/ipobj.c",
+      "procedure": "ipset_add",
+      "line": 123,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "src/sfutil/ipobj.c",
+      "procedure": "ipset_add",
+      "line": 131,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": []
+},
+ {
+   "index": 4,
+   "subject": "snort",
+   "bug_id": "memory-leak-4",
+   "bug_type": "Memory Leak",
+   "source": {
+      "src-file": "src/sfutil/ipobj.c",
+      "procedure": "portset_add",
+      "line": 224,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "src/sfutil/ipobj.c",
+      "procedure": "portset_add",
+      "line": 230,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": []
+},
+ {
+   "index": 5,
+   "subject": "snort",
+   "bug_id": "memory-leak-5",
+   "bug_type": "Memory Leak",
+   "source": {
+      "src-file": "src/sfutil/sfportobject.c",
+      "procedure": "PortObjectAddPort",
+      "line": 798,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "src/sfutil/sfportobject.c",
+      "procedure": "PortObjectAddPort",
+      "line": 810,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": []
+},
+ {
+   "index": 6,
+   "subject": "snort",
+   "bug_id": "memory-leak-6",
+   "bug_type": "Memory Leak",
+   "source": {
+      "src-file": "src/sfutil/sfportobject.c",
+      "procedure": "PortObjectAddRange",
+      "line": 820,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "src/sfutil/sfportobject.c",
+      "procedure": "PortObjectAddRange",
+      "line": 832,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": []
+},
+ {
+   "index": 7,
+   "subject": "snort",
+   "bug_id": "memory-leak-7",
+   "bug_type": "Memory Leak",
+   "source": {
+      "src-file": "src/sfutil/sfportobject.c",
+      "procedure": "PortObjectAppendPortObject",
+      "line": 1493,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "src/sfutil/sfportobject.c",
+      "procedure": "PortObjectAppendPortObject",
+      "line": 1497,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": []
+},
+ {
+   "index": 8,
+   "subject": "snort",
+   "bug_id": "memory-leak-8",
+   "bug_type": "Memory Leak",
+   "source": {
+      "src-file": "src/sfutil/sfportobject.c",
+      "procedure": "PortObjectAddRule",
+      "line": 1737,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "src/sfutil/sfportobject.c",
+      "procedure": "PortObjectAddRule",
+      "line": 1745,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": []
+},
+ {
+   "index": 9,
+   "subject": "swoole",
+   "bug_id": "memory-leak-1",
+   "bug_type": "Memory Leak",
+   "source": {
+      "src-file": "memory/Table.c",
+      "procedure": "swTableColumn_add",
+      "line": 85,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "memory/Table.c",
+      "procedure": "swTableColumn_add",
+      "line": 131,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": []
+},
+ {
+   "index": 10,
+   "subject": "swoole",
+   "bug_id": "memory-leak-2",
+   "bug_type": "Memory Leak",
+   "source": {
+      "src-file": "pipe/PipeBase.c",
+      "procedure": "swPipeBase_create",
+      "line": 32,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "pipe/PipeBase.c",
+      "procedure": "swPipeBase_create",
+      "line": 41,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": []
+},
+ {
+   "index": 11,
+   "subject": "swoole",
+   "bug_id": "memory-leak-3",
+   "bug_type": "Memory Leak",
+   "source": {
+      "src-file": "reactor/ReactorPoll.c",
+      "procedure": "swReactorPoll_create",
+      "line": 50,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "reactor/ReactorPoll.c",
+      "procedure": "swReactorPoll_create",
+      "line": 59,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": []
+},
+ {
+   "index": 12,
+   "subject": "x264",
+   "bug_id": "memory-leak-1",
+   "bug_type": "Memory Leak",
+   "source": {
+      "src-file": "filters/video/cache.c",
+      "procedure": "init",
+      "line": 59,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "filters/video/cache.c",
+      "procedure": "init",
+      "line": 72,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": []
+},
+ {
+   "index": 13,
+   "subject": "x264",
+   "bug_id": "memory-leak-2",
+   "bug_type": "Memory Leak",
+   "source": {
+      "src-file": "filters/video/source.c",
+      "procedure": "init",
+      "line": 42,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "filters/video/source.c",
+      "procedure": "init",
+      "line": 48,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": []
+},
+ {
+   "index": 14,
+   "subject": "x264",
+   "bug_id": "memory-leak-3",
+   "bug_type": "Memory Leak",
+   "source": {
+      "src-file": "input/avs.c",
+      "procedure": "open_file",
+      "line": 265,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "input/avs.c",
+      "procedure": "open_file",
+      "line": 268,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": []
+},
+ {
+   "index": 15,
+   "subject": "x264",
+   "bug_id": "memory-leak-4",
+   "bug_type": "Memory Leak",
+   "source": {
+      "src-file": "input/thread.c",
+      "procedure": "open_file",
+      "line": 53,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "input/thread.c",
+      "procedure": "open_file",
+      "line": 54,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": []
+},
+ {
+   "index": 16,
+   "subject": "x264",
+   "bug_id": "memory-leak-5",
+   "bug_type": "Memory Leak",
+   "source": {
+      "src-file": "input/thread.c",
+      "procedure": "open_file",
+      "line": 53,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "input/thread.c",
+      "procedure": "open_file",
+      "line": 61,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": []
+},
+ {
+   "index": 17,
+   "subject": "x264",
+   "bug_id": "memory-leak-6",
+   "bug_type": "Memory Leak",
+   "source": {
+      "src-file": "input/timecode.c",
+      "procedure": "open_file",
+      "line": 347,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "input/timecode.c",
+      "procedure": "open_file",
+      "line": 360,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": []
+},
+ {
+   "index": 18,
+   "subject": "openssl-1",
+   "bug_id": "null-ptr-1",
+   "bug_type": "Null Pointer Dereference",
+   "source": {
+      "src-file": "crypto/x509/x509_vpm.c",
+      "procedure": "",
+      "line": 91,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "crypto/x509/x509_vpm.c",
+      "procedure": "",
+      "line": 92,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": []
+},
+ {
+   "index": 19,
+   "subject": "openssl-1",
+   "bug_id": "null-ptr-2",
+   "bug_type": "Null Pointer Dereference",
+   "source": {
+      "src-file": "crypto/dh/dh_check.c",
+      "procedure": "",
+      "line": 128,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "crypto/dh/dh_check.c",
+      "procedure": "",
+      "line": 130,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": []
+},
+ {
+   "index": 20,
+   "subject": "openssl-1",
+   "bug_id": "null-ptr-3",
+   "bug_type": "Null Pointer Dereference",
+   "source": {
+      "src-file": "crypto/ocsp/ocsp_ht.c",
+      "procedure": "",
+      "line": 160,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "crypto/ocsp/ocsp_ht.c",
+      "procedure": "",
+      "line": 161,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": []
+},
+ {
+   "index": 21,
+   "subject": "openssl-1",
+   "bug_id": "null-ptr-4",
+   "bug_type": "Null Pointer Dereference",
+   "source": {
+      "src-file": "crypto/mem.c",
+      "procedure": "",
+      "line": 329,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "crypto/mem.c",
+      "procedure": "",
+      "line": 331,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": []
+},
+ {
+   "index": 22,
+   "subject": "openssl-1",
+   "bug_id": "null-ptr-5",
+   "bug_type": "Null Pointer Dereference",
+   "source": {
+      "src-file": "ssl/d1_both.c",
+      "procedure": "",
+      "line": 1181,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "ssl/d1_both.c",
+      "procedure": "",
+      "line": 1183,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": []
+},
+ {
+   "index": 23,
+   "subject": "openssl-1",
+   "bug_id": "memory-leak-1",
+   "bug_type": "Memory Leak",
+   "source": {
+      "src-file": "crypto/asn1/bio_asn1.c",
+      "procedure": "",
+      "line": 153,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "crypto/asn1/bio_asn1.c",
+      "procedure": "",
+      "line": 162,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": []
+},
+ {
+   "index": 24,
+   "subject": "openssl-1",
+   "bug_id": "memory-leak-2",
+   "bug_type": "Memory Leak",
+   "source": {
+      "src-file": "crypto/ocsp/ocsp_ht.c",
+      "procedure": "",
+      "line": 160,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "crypto/ocsp/ocsp_ht.c",
+      "procedure": "",
+      "line": 182,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": []
+},
+ {
+   "index": 25,
+   "subject": "openssl-1",
+   "bug_id": "memory-leak-3",
+   "bug_type": "Memory Leak",
+   "source": {
+      "src-file": "crypto/asn1/asn_mime.c",
+      "procedure": "",
+      "line": 825,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "crypto/asn1/asn_mime.c",
+      "procedure": "",
+      "line": 831,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": []
+},
+ {
+   "index": 26,
+   "subject": "openssl-1",
+   "bug_id": "memory-leak-4",
+   "bug_type": "Memory Leak",
+   "source": {
+      "src-file": "engines/ccgost/gost_pmeth.c",
+      "procedure": "",
+      "line": 26,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "engines/ccgost/gost_pmeth.c",
+      "procedure": "",
+      "line": 44,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": []
+},
+ {
+   "index": 27,
+   "subject": "openssl-3",
+   "bug_id": "null-ptr-1",
+   "bug_type": "Null Pointer Dereference",
+   "source": {
+      "src-file": "test/params_test.c",
+      "procedure": "",
+      "line": null,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "",
+      "procedure": "",
+      "line": null,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": []
+},
+ {
+   "index": 28,
+   "subject": "openssl-3",
+   "bug_id": "null-ptr-2",
+   "bug_type": "Null Pointer Dereference",
+   "source": {
+      "src-file": "apps/lib/s_cb.c",
+      "procedure": "",
+      "line": null,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "",
+      "procedure": "",
+      "line": null,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": []
+},
+ {
+   "index": 29,
+   "subject": "openssl-3",
+   "bug_id": "null-ptr-3",
+   "bug_type": "Null Pointer Dereference",
+   "source": {
+      "src-file": "apps/s_server.c",
+      "procedure": "",
+      "line": null,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "",
+      "procedure": "",
+      "line": null,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": []
+},
+ {
+   "index": 30,
+   "subject": "openssl-3",
+   "bug_id": "memory-leak-1",
+   "bug_type": "Memory Leak",
+   "source": {
+      "src-file": "crypto/x509/x_x509a.c",
+      "procedure": "",
+      "line": null,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "",
+      "procedure": "",
+      "line": null,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": []
+},
+ {
+   "index": 31,
+   "subject": "LinuxKernel-v5.0-rc8",
+   "bug_id": "null-ptr-1",
+   "bug_type": "Null Pointer Dereference",
+   "source": {
+      "src-file": "tools/lib/subcmd/help.c",
+      "procedure": "add_cmdname",
+      "line": 18,
+      "exp": ""
+   },
+   "sink": {
+      "src-file": "tools/lib/subcmd/help.c",
+      "procedure": "add_cmdname",
+      "line": 20,
+      "exp": ""
+   },
+   "build_dir": "",
+   "compile_programs": [
+      "drivers/gpu/drm/drm_framebuffer.o"
+   ]
+}
+]
