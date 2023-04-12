@@ -28,7 +28,10 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends
     libffi-dev \
     libelf-dev \
     wget \
-    ca-certificates
+    ca-certificates \
+    make
+
+
 
 
 
