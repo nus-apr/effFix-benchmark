@@ -7,4 +7,5 @@ dir_name=$1/$benchmark_name/$project_name/$bug_id
 cd $dir_name/src
 
 ./autogen.sh
-./configure
+./configure --disable-dependency-tracking
+
