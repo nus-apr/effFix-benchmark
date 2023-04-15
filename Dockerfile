@@ -3,33 +3,44 @@ LABEL maintainer="Ridwan Shariffdeen <rshariffdeen@gmail.com>"
 
 RUN apt-get update && apt-get upgrade -y && apt-get autoremove -y
 
+# install some basic software
+RUN apt-get update && \
+    DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends \
+    ca-certificates \
+    cmake \
+    gdb \
+    make \
+    nano \
+    openssh-client \
+    vim \
+    wget
+
+
 # install dependencies for benchmark programs
 RUN DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends \
+    bison \
+    clang-format \
+    flex \
+    gettext \
+    libdaq-dev \
+    libdnet \
+    libdumbnet-dev \
     libedit-dev \
-    nasm \
-    php \
-    php7.4-dev \
+    libelf-dev \
+    libffi-dev \
+    libluajit-5.1-dev \
+    libnghttp2-dev \
     libpcap-dev \
     libpcre3 \
     libpcre3-dev \
-    libdumbnet-dev \
-    zlib1g-dev \
-    libluajit-5.1-dev \
     libssl-dev \
-    libnghttp2-dev \
-    libdnet \
-    openssl \
-    bison \
-    flex \
-    libdaq-dev \
-    clang-format \
-    gettext \
     libtasn1-dev \
-    libffi-dev \
-    libelf-dev \
-    wget \
-    ca-certificates \
-    make
+    nasm \
+    openssl \
+    php \
+    php7.4-dev \
+    zlib1g-dev
+
 
 
 
