@@ -9,6 +9,7 @@ RUN apt-get update && \
     ca-certificates \
     cmake \
     gdb \
+    git \
     make \
     nano \
     openssh-client \
