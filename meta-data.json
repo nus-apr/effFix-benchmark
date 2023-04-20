@@ -1,6 +1,6 @@
 [
   {
-    "index": 1,
+    "id": 1,
     "subject": "p11-kit",
     "bug_id": "memory-leak-1",
     "bug_type": "Memory Leak",
@@ -20,7 +20,7 @@
     "compile_programs": []
   },
   {
-    "index": 2,
+    "id": 2,
     "subject": "snort",
     "bug_id": "memory-leak-2",
     "bug_type": "Memory Leak",
@@ -40,7 +40,7 @@
     "compile_programs": []
   },
   {
-    "index": 3,
+    "id": 3,
     "subject": "snort",
     "bug_id": "memory-leak-3",
     "bug_type": "Memory Leak",
@@ -60,7 +60,7 @@
     "compile_programs": []
   },
   {
-    "index": 4,
+    "id": 4,
     "subject": "snort",
     "bug_id": "memory-leak-4",
     "bug_type": "Memory Leak",
@@ -80,7 +80,7 @@
     "compile_programs": []
   },
   {
-    "index": 5,
+    "id": 5,
     "subject": "snort",
     "bug_id": "memory-leak-5",
     "bug_type": "Memory Leak",
@@ -100,7 +100,7 @@
     "compile_programs": []
   },
   {
-    "index": 6,
+    "id": 6,
     "subject": "snort",
     "bug_id": "memory-leak-6",
     "bug_type": "Memory Leak",
@@ -120,7 +120,7 @@
     "compile_programs": []
   },
   {
-    "index": 7,
+    "id": 7,
     "subject": "snort",
     "bug_id": "memory-leak-7",
     "bug_type": "Memory Leak",
@@ -140,7 +140,7 @@
     "compile_programs": []
   },
   {
-    "index": 8,
+    "id": 8,
     "subject": "snort",
     "bug_id": "memory-leak-8",
     "bug_type": "Memory Leak",
@@ -160,7 +160,7 @@
     "compile_programs": []
   },
   {
-    "index": 9,
+    "id": 9,
     "subject": "snort",
     "bug_id": "memory-leak-9",
     "bug_type": "Memory Leak",
@@ -180,7 +180,7 @@
     "compile_programs": []
   },
   {
-    "index": 10,
+    "id": 10,
     "subject": "swoole",
     "bug_id": "memory-leak-1",
     "bug_type": "Memory Leak",
@@ -200,7 +200,7 @@
     "compile_programs": []
   },
   {
-    "index": 11,
+    "id": 11,
     "subject": "swoole",
     "bug_id": "memory-leak-2",
     "bug_type": "Memory Leak",
@@ -220,7 +220,7 @@
     "compile_programs": []
   },
   {
-    "index": 12,
+    "id": 12,
     "subject": "swoole",
     "bug_id": "memory-leak-3",
     "bug_type": "Memory Leak",
@@ -240,7 +240,7 @@
     "compile_programs": []
   },
   {
-    "index": 13,
+    "id": 13,
     "subject": "x264",
     "bug_id": "memory-leak-1",
     "bug_type": "Memory Leak",
@@ -260,7 +260,7 @@
     "compile_programs": []
   },
   {
-    "index": 14,
+    "id": 14,
     "subject": "x264",
     "bug_id": "memory-leak-2",
     "bug_type": "Memory Leak",
@@ -280,7 +280,7 @@
     "compile_programs": []
   },
   {
-    "index": 15,
+    "id": 15,
     "subject": "x264",
     "bug_id": "memory-leak-3",
     "bug_type": "Memory Leak",
@@ -300,7 +300,7 @@
     "compile_programs": []
   },
   {
-    "index": 16,
+    "id": 16,
     "subject": "x264",
     "bug_id": "memory-leak-4",
     "bug_type": "Memory Leak",
@@ -320,7 +320,7 @@
     "compile_programs": []
   },
   {
-    "index": 17,
+    "id": 17,
     "subject": "x264",
     "bug_id": "memory-leak-5",
     "bug_type": "Memory Leak",
@@ -340,7 +340,7 @@
     "compile_programs": []
   },
   {
-    "index": 18,
+    "id": 18,
     "subject": "x264",
     "bug_id": "memory-leak-6",
     "bug_type": "Memory Leak",
@@ -360,7 +360,7 @@
     "compile_programs": []
   },
   {
-    "index": 19,
+    "id": 19,
     "subject": "openssl-1",
     "bug_id": "null-ptr-1",
     "bug_type": "Null Pointer Dereference",
@@ -382,7 +382,7 @@
     ]
   },
   {
-    "index": 20,
+    "id": 20,
     "subject": "openssl-1",
     "bug_id": "null-ptr-2",
     "bug_type": "Null Pointer Dereference",
@@ -404,7 +404,7 @@
     ]
   },
   {
-    "index": 21,
+    "id": 21,
     "subject": "openssl-1",
     "bug_id": "null-ptr-3",
     "bug_type": "Null Pointer Dereference",
@@ -426,7 +426,7 @@
     ]
   },
   {
-    "index": 22,
+    "id": 22,
     "subject": "openssl-1",
     "bug_id": "null-ptr-4",
     "bug_type": "Null Pointer Dereference",
@@ -448,7 +448,7 @@
     ]
   },
   {
-    "index": 23,
+    "id": 23,
     "subject": "openssl-1",
     "bug_id": "null-ptr-5",
     "bug_type": "Null Pointer Dereference",
@@ -470,7 +470,7 @@
     ]
   },
   {
-    "index": 24,
+    "id": 24,
     "subject": "openssl-1",
     "bug_id": "memory-leak-1",
     "bug_type": "Memory Leak",
@@ -492,7 +492,7 @@
     ]
   },
   {
-    "index": 25,
+    "id": 25,
     "subject": "openssl-1",
     "bug_id": "memory-leak-2",
     "bug_type": "Memory Leak",
@@ -514,7 +514,7 @@
     ]
   },
   {
-    "index": 26,
+    "id": 26,
     "subject": "openssl-1",
     "bug_id": "memory-leak-3",
     "bug_type": "Memory Leak",
@@ -536,7 +536,7 @@
     ]
   },
   {
-    "index": 27,
+    "id": 27,
     "subject": "openssl-1",
     "bug_id": "memory-leak-4",
     "bug_type": "Memory Leak",
@@ -558,7 +558,7 @@
     ]
   },
   {
-    "index": 28,
+    "id": 28,
     "subject": "openssl-3",
     "bug_id": "null-ptr-1",
     "bug_type": "Null Pointer Dereference",
@@ -580,7 +580,7 @@
     ]
   },
   {
-    "index": 29,
+    "id": 29,
     "subject": "openssl-3",
     "bug_id": "null-ptr-2",
     "bug_type": "Null Pointer Dereference",
@@ -602,7 +602,7 @@
     ]
   },
   {
-    "index": 30,
+    "id": 30,
     "subject": "openssl-3",
     "bug_id": "null-ptr-3",
     "bug_type": "Null Pointer Dereference",
@@ -624,7 +624,7 @@
     ]
   },
   {
-    "index": 31,
+    "id": 31,
     "subject": "LinuxKernel-v5.0-rc8",
     "bug_id": "null-ptr-1",
     "bug_type": "Null Pointer Dereference",
