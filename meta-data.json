@@ -185,13 +185,13 @@
     "bug_id": "memory-leak-1",
     "bug_type": "Memory Leak",
     "source": {
-      "src-file": "memory/Table.c",
+      "src-file": "src/memory/Table.c",
       "procedure": "swTableColumn_add",
       "line": 87,
       "exp": ""
     },
     "sink": {
-      "src-file": "memory/Table.c",
+      "src-file": "src/memory/Table.c",
       "procedure": "swTableColumn_add",
       "line": 132,
       "exp": ""
@@ -205,13 +205,13 @@
     "bug_id": "memory-leak-2",
     "bug_type": "Memory Leak",
     "source": {
-      "src-file": "pipe/PipeBase.c",
+      "src-file": "src/pipe/PipeBase.c",
       "procedure": "swPipeBase_create",
       "line": 32,
       "exp": ""
     },
     "sink": {
-      "src-file": "pipe/PipeBase.c",
+      "src-file": "src/pipe/PipeBase.c",
       "procedure": "swPipeBase_create",
       "line": 39,
       "exp": ""
@@ -225,13 +225,13 @@
     "bug_id": "memory-leak-3",
     "bug_type": "Memory Leak",
     "source": {
-      "src-file": "reactor/ReactorPoll.c",
+      "src-file": "src/reactor/ReactorPoll.c",
       "procedure": "swReactorPoll_create",
       "line": 50,
       "exp": ""
     },
     "sink": {
-      "src-file": "reactor/ReactorPoll.c",
+      "src-file": "src/reactor/ReactorPoll.c",
       "procedure": "swReactorPoll_create",
       "line": 57,
       "exp": ""
