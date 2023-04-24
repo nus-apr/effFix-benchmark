@@ -22,7 +22,7 @@
   {
     "id": 2,
     "subject": "snort",
-    "bug_id": "memory-leak-2",
+    "bug_id": "memory-leak-1",
     "bug_type": "Memory Leak",
     "source": {
       "src-file": "src/sfutil/ipobj.c",
@@ -42,7 +42,7 @@
   {
     "id": 3,
     "subject": "snort",
-    "bug_id": "memory-leak-3",
+    "bug_id": "memory-leak-2",
     "bug_type": "Memory Leak",
     "source": {
       "src-file": "src/sfutil/ipobj.c",
@@ -62,7 +62,7 @@
   {
     "id": 4,
     "subject": "snort",
-    "bug_id": "memory-leak-4",
+    "bug_id": "memory-leak-3",
     "bug_type": "Memory Leak",
     "source": {
       "src-file": "src/sfutil/ipobj.c",
@@ -82,7 +82,7 @@
   {
     "id": 5,
     "subject": "snort",
-    "bug_id": "memory-leak-5",
+    "bug_id": "memory-leak-4",
     "bug_type": "Memory Leak",
     "source": {
       "src-file": "src/sfutil/sfportobject.c",
@@ -102,7 +102,7 @@
   {
     "id": 6,
     "subject": "snort",
-    "bug_id": "memory-leak-6",
+    "bug_id": "memory-leak-5",
     "bug_type": "Memory Leak",
     "source": {
       "src-file": "src/sfutil/sfportobject.c",
@@ -122,7 +122,7 @@
   {
     "id": 7,
     "subject": "snort",
-    "bug_id": "memory-leak-7",
+    "bug_id": "memory-leak-6",
     "bug_type": "Memory Leak",
     "source": {
       "src-file": "src/sfutil/sfportobject.c",
@@ -142,7 +142,7 @@
   {
     "id": 8,
     "subject": "snort",
-    "bug_id": "memory-leak-8",
+    "bug_id": "memory-leak-7",
     "bug_type": "Memory Leak",
     "source": {
       "src-file": "src/sfutil/sfportobject.c",
@@ -162,7 +162,7 @@
   {
     "id": 9,
     "subject": "snort",
-    "bug_id": "memory-leak-9",
+    "bug_id": "memory-leak-8",
     "bug_type": "Memory Leak",
     "source": {
       "src-file": "src/sfutil/sfportobject.c",
