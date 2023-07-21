@@ -17,6 +17,7 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_command": "autoreconf && ./configure",
     "build_command": "make CFLAGS='-fcommon' -j32",
     "compile_programs": []
   },
@@ -38,6 +39,7 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_command": "autoreconf && ./configure",
     "build_command": "make CFLAGS='-fcommon' -j32",
     "compile_programs": []
   },
@@ -59,6 +61,7 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_command": "autoreconf && ./configure",
     "build_command": "make CFLAGS='-fcommon' -j32",
     "compile_programs": []
   },
@@ -80,6 +83,7 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_command": "autoreconf && ./configure",
     "build_command": "make CFLAGS='-fcommon' -j32",
     "compile_programs": []
   },
@@ -101,6 +105,7 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_command": "autoreconf && ./configure",
     "build_command": "make CFLAGS='-fcommon' -j32",
     "compile_programs": []
   },
@@ -122,6 +127,7 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_command": "autoreconf && ./configure",
     "build_command": "make CFLAGS='-fcommon' -j32",
     "compile_programs": []
   },
@@ -143,6 +149,7 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_command": "autoreconf && ./configure",
     "build_command": "make CFLAGS='-fcommon' -j32",
     "compile_programs": []
   },
@@ -165,6 +172,7 @@
     },
     "build_dir": "",
     "build_command": "make CFLAGS='-fcommon' -j32",
+    "config_command": "autoreconf && ./configure",
     "compile_programs": []
   },
   {
@@ -185,6 +193,7 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_command": "autoreconf && ./configure",
     "build_command": "make CFLAGS='-fcommon' -j32",
     "compile_programs": []
   },
@@ -206,6 +215,7 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_command": "phpize && ./configure",
     "build_command": "make -j32",
     "compile_programs": []
   },
@@ -227,6 +237,7 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_command": "phpize && ./configure",
     "build_command": "make -j32",
     "compile_programs": []
   },
@@ -248,6 +259,7 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_command": "phpize && ./configure",
     "build_command": "make -j32",
     "compile_programs": []
   },
@@ -269,6 +281,7 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_command": "./configure",
     "build_command": "make -j32",
     "compile_programs": []
   },
@@ -290,6 +303,7 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_command": "./configure",
     "build_command": "make -j32",
     "compile_programs": []
   },
@@ -311,6 +325,7 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_command": "./configure",
     "build_command": "make -j32",
     "compile_programs": []
   },
@@ -332,6 +347,7 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_command": "./configure",
     "build_command": "make -j32",
     "compile_programs": []
   },
@@ -353,6 +369,7 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_command": "./configure",
     "build_command": "make -j32",
     "compile_programs": []
   },
@@ -374,6 +391,7 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_command": "./configure",
     "build_command": "make -j32",
     "compile_programs": []
   },
@@ -395,6 +413,7 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_command": "CC=gcc ./config",
     "build_command": "make",
     "compile_programs": [
       "build_crypto"
@@ -418,6 +437,7 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_command": "CC=gcc ./config",
     "build_command": "make",
     "compile_programs": [
       "build_crypto"
@@ -441,6 +461,7 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_command": "CC=gcc ./config",
     "build_command": "make",
     "compile_programs": [
       "build_crypto"
@@ -464,6 +485,7 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_command": "CC=gcc ./config",
     "build_command": "make",
     "compile_programs": [
       "build_crypto"
@@ -487,6 +509,7 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_command": "CC=gcc ./config",
     "build_command": "make",
     "compile_programs": [
       "build_ssl"
@@ -510,6 +533,7 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_command": "CC=gcc ./config",
     "build_command": "make",
     "compile_programs": [
       "build_crypto"
@@ -533,6 +557,7 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_command": "CC=gcc ./config",
     "build_command": "make",
     "compile_programs": [
       "build_crypto"
@@ -556,6 +581,7 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_command": "CC=gcc ./config",
     "build_command": "make",
     "compile_programs": [
       "build_crypto"
@@ -579,6 +605,7 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_command": "CC=gcc ./config",
     "build_command": "make",
     "compile_programs": [
       "build_engines"
@@ -602,6 +629,7 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_command": "CC=gcc ./config",
     "build_command": "make -j32",
     "compile_programs": [
       "build_tests"
@@ -625,6 +653,7 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_command": "CC=gcc ./config",
     "build_command": "make -j32",
     "compile_programs": [
       "build_apps"
@@ -648,6 +677,7 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_command": "CC=gcc ./config",
     "build_command": "make -j32",
     "compile_programs": [
       "build_apps"
