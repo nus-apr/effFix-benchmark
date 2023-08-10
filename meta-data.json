@@ -701,6 +701,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_command": "make defconfig",
+    "build_command": "make -j`nproc` drivers/gpu/drm/drm_framebuffer.o",
     "compile_programs": [
       "drivers/gpu/drm/drm_framebuffer.o"
     ]
