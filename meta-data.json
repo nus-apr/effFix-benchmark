@@ -29,13 +29,13 @@
     "source": {
       "src-file": "src/sfutil/ipobj.c",
       "procedure": "ipset_add",
-      "line": 126,
+      "line": 125,
       "exp": ""
     },
     "sink": {
       "src-file": "src/sfutil/ipobj.c",
       "procedure": "ipset_add",
-      "line": 136,
+      "line": 135,
       "exp": ""
     },
     "build_dir": "",
@@ -51,13 +51,13 @@
     "source": {
       "src-file": "src/sfutil/ipobj.c",
       "procedure": "ipset_add",
-      "line": 126,
+      "line": 125,
       "exp": ""
     },
     "sink": {
       "src-file": "src/sfutil/ipobj.c",
       "procedure": "ipset_add",
-      "line": 138,
+      "line": 137,
       "exp": ""
     },
     "build_dir": "",
@@ -73,13 +73,13 @@
     "source": {
       "src-file": "src/sfutil/ipobj.c",
       "procedure": "portset_add",
-      "line": 235,
+      "line": 233,
       "exp": ""
     },
     "sink": {
       "src-file": "src/sfutil/ipobj.c",
       "procedure": "portset_add",
-      "line": 243,
+      "line": 241,
       "exp": ""
     },
     "build_dir": "",
@@ -95,13 +95,13 @@
     "source": {
       "src-file": "src/sfutil/sfportobject.c",
       "procedure": "PortObjectAddPort",
-      "line": 799,
+      "line": 800,
       "exp": ""
     },
     "sink": {
       "src-file": "src/sfutil/sfportobject.c",
       "procedure": "PortObjectAddPort",
-      "line": 813,
+      "line": 814,
       "exp": ""
     },
     "build_dir": "",
@@ -139,13 +139,13 @@
     "source": {
       "src-file": "src/sfutil/sfportobject.c",
       "procedure": "PortObjectAppend",
-      "line": 1480,
+      "line": 1479,
       "exp": ""
     },
     "sink": {
       "src-file": "src/sfutil/sfportobject.c",
       "procedure": "PortObjectAppend",
-      "line": 1488,
+      "line": 1487,
       "exp": ""
     },
     "build_dir": "",
@@ -161,13 +161,13 @@
     "source": {
       "src-file": "src/sfutil/sfportobject.c",
       "procedure": "PortObjectAppendPortObject",
-      "line": 1504,
+      "line": 1502,
       "exp": ""
     },
     "sink": {
       "src-file": "src/sfutil/sfportobject.c",
       "procedure": "PortObjectAppendPortObject",
-      "line": 1509,
+      "line": 1507,
       "exp": ""
     },
     "build_dir": "",
@@ -183,13 +183,13 @@
     "source": {
       "src-file": "src/sfutil/sfportobject.c",
       "procedure": "PortObjectAddRule",
-      "line": 1752,
+      "line": 1749,
       "exp": ""
     },
     "sink": {
       "src-file": "src/sfutil/sfportobject.c",
       "procedure": "PortObjectAddRule",
-      "line": 1760,
+      "line": 1757,
       "exp": ""
     },
     "build_dir": "",
@@ -337,13 +337,13 @@
     "source": {
       "src-file": "input/thread.c",
       "procedure": "open_file",
-      "line": 53,
+      "line": 54,
       "exp": ""
     },
     "sink": {
       "src-file": "input/thread.c",
       "procedure": "open_file",
-      "line": 54,
+      "line": 56,
       "exp": ""
     },
     "build_dir": "",
@@ -359,13 +359,13 @@
     "source": {
       "src-file": "input/thread.c",
       "procedure": "open_file",
-      "line": 53,
+      "line": 54,
       "exp": ""
     },
     "sink": {
       "src-file": "input/thread.c",
       "procedure": "open_file",
-      "line": 60,
+      "line": 62,
       "exp": ""
     },
     "build_dir": "",
@@ -617,30 +617,6 @@
     "bug_id": "null-ptr-1",
     "bug_type": "Null Pointer Dereference",
     "source": {
-      "src-file": "test/params_test.c",
-      "procedure": "init_object",
-      "line": 100,
-      "exp": ""
-    },
-    "sink": {
-      "src-file": "",
-      "procedure": "",
-      "line": 102,
-      "exp": ""
-    },
-    "build_dir": "",
-    "config_command": "CC=gcc ./config",
-    "build_command": "make -j32",
-    "compile_programs": [
-      "build_tests"
-    ]
-  },
-  {
-    "id": 29,
-    "subject": "openssl-3",
-    "bug_id": "null-ptr-2",
-    "bug_type": "Null Pointer Dereference",
-    "source": {
       "src-file": "apps/lib/s_cb.c",
       "procedure": "ssl_excert_prepend",
       "line": 957,
@@ -659,10 +635,10 @@
       "build_apps"
     ]
   },
-  {
+    {
     "id": 30,
     "subject": "openssl-3",
-    "bug_id": "null-ptr-3",
+    "bug_id": "null-ptr-2",
     "bug_type": "Null Pointer Dereference",
     "source": {
       "src-file": "apps/s_server.c",
@@ -683,6 +659,31 @@
       "build_apps"
     ]
   },
+  {
+    "id": 30,
+    "subject": "openssl-3",
+    "bug_id": "null-ptr-3",
+    "bug_type": "Null Pointer Dereference",
+    "source": {
+      "src-file": "test/params_test.c",
+      "procedure": "init_object",
+      "line": 100,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "",
+      "procedure": "",
+      "line": 102,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_command": "CC=gcc ./config",
+    "build_command": "make -j32",
+    "compile_programs": [
+      "build_tests"
+    ]
+  },
+
   {
     "id": 31,
     "subject": "linux-kernel-5",
