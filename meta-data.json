@@ -705,7 +705,55 @@
     "config_command": "make defconfig",
     "build_command": "make -j`nproc` drivers/gpu/drm/drm_framebuffer.o",
     "compile_programs": [
-      "drivers/gpu/drm/drm_framebuffer.o"
+      "-C tools/lib/subcmd help.o"
+    ]
+  },
+  {
+    "id": 32,
+    "subject": "linux-kernel-5",
+    "bug_id": "memory-leak-1",
+    "bug_type": "Memory Leak",
+    "source": {
+      "src-file": "tools/objtool/elf.c",
+      "procedure": "read_sections",
+      "line": 161,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "tools/objtool/elf.c",
+      "procedure": "read_sections",
+      "line": 207,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_command": "make defconfig",
+    "build_command": "make -j`nproc` drivers/gpu/drm/drm_framebuffer.o",
+    "compile_programs": [
+      "-C tools/objtool elf.o"
+    ]
+  },
+    {
+    "id": 33,
+    "subject": "linux-kernel-5",
+    "bug_id": "memory-leak-2",
+    "bug_type": "Memory Leak",
+    "source": {
+      "src-file": "tools/objtool/orc_gen.c",
+      "procedure": "create_orc_entry",
+      "line": 113,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "tools/objtool/orc_gen.c",
+      "procedure": "create_orc_entry",
+      "line": 126,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_command": "make defconfig",
+    "build_command": "make -j`nproc` drivers/gpu/drm/drm_framebuffer.o",
+    "compile_programs": [
+      "-C tools/objtool orc_gen.o"
     ]
   }
 ]
