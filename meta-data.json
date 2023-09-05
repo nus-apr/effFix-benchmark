@@ -17,6 +17,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "autoreconf && ./configure",
     "build_command": "make CFLAGS='-fcommon' -j32",
     "compile_programs": []
@@ -39,6 +41,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "autoreconf && ./configure",
     "build_command": "make CFLAGS='-fcommon' -j32",
     "compile_programs": []
@@ -61,6 +65,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "autoreconf && ./configure",
     "build_command": "make CFLAGS='-fcommon' -j32",
     "compile_programs": []
@@ -83,6 +89,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "autoreconf && ./configure",
     "build_command": "make CFLAGS='-fcommon' -j32",
     "compile_programs": []
@@ -105,6 +113,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "autoreconf && ./configure",
     "build_command": "make CFLAGS='-fcommon' -j32",
     "compile_programs": []
@@ -127,6 +137,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "autoreconf && ./configure",
     "build_command": "make CFLAGS='-fcommon' -j32",
     "compile_programs": []
@@ -149,6 +161,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "autoreconf && ./configure",
     "build_command": "make CFLAGS='-fcommon' -j32",
     "compile_programs": []
@@ -171,6 +185,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "build_command": "make CFLAGS='-fcommon' -j32",
     "config_command": "autoreconf && ./configure",
     "compile_programs": []
@@ -193,6 +209,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "autoreconf && ./configure",
     "build_command": "make CFLAGS='-fcommon' -j32",
     "compile_programs": []
@@ -215,6 +233,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "phpize && ./configure",
     "build_command": "make -j32",
     "compile_programs": []
@@ -237,6 +257,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "phpize && ./configure",
     "build_command": "make -j32",
     "compile_programs": []
@@ -259,6 +281,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "phpize && ./configure",
     "build_command": "make -j32",
     "compile_programs": []
@@ -281,6 +305,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "./configure",
     "build_command": "make -j32",
     "compile_programs": []
@@ -303,6 +329,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "./configure",
     "build_command": "make -j32",
     "compile_programs": []
@@ -325,6 +353,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "./configure",
     "build_command": "make -j32",
     "compile_programs": []
@@ -347,6 +377,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "./configure",
     "build_command": "make -j32",
     "compile_programs": []
@@ -369,6 +401,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "./configure",
     "build_command": "make -j32",
     "compile_programs": []
@@ -391,6 +425,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "./configure",
     "build_command": "make -j32",
     "compile_programs": []
@@ -413,6 +449,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
     "build_command": "make",
     "compile_programs": [
@@ -437,6 +475,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
     "build_command": "make",
     "compile_programs": [
@@ -461,6 +501,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
     "build_command": "make",
     "compile_programs": [
@@ -485,6 +527,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
     "build_command": "make",
     "compile_programs": [
@@ -509,6 +553,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
     "build_command": "make",
     "compile_programs": [
@@ -533,6 +579,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
     "build_command": "make",
     "compile_programs": [
@@ -557,6 +605,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
     "build_command": "make",
     "compile_programs": [
@@ -581,6 +631,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
     "build_command": "make",
     "compile_programs": [
@@ -605,6 +657,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
     "build_command": "make",
     "compile_programs": [
@@ -629,13 +683,15 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
     "build_command": "make -j32",
     "compile_programs": [
       "build_apps"
     ]
   },
-    {
+  {
     "id": 30,
     "subject": "openssl-3",
     "bug_id": "null-ptr-2",
@@ -653,6 +709,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
     "build_command": "make -j32",
     "compile_programs": [
@@ -677,13 +735,14 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
     "build_command": "make -j32",
     "compile_programs": [
       "build_tests"
     ]
   },
-
   {
     "id": 31,
     "subject": "linux-kernel-5",
@@ -702,6 +761,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "make defconfig",
     "build_command": "make -j`nproc` drivers/gpu/drm/drm_framebuffer.o",
     "compile_programs": [
@@ -726,13 +787,15 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "make defconfig",
     "build_command": "make -j`nproc` drivers/gpu/drm/drm_framebuffer.o",
     "compile_programs": [
       "-C tools/objtool elf.o"
     ]
   },
-    {
+  {
     "id": 33,
     "subject": "linux-kernel-5",
     "bug_id": "memory-leak-2",
@@ -750,6 +813,8 @@
       "exp": ""
     },
     "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
     "config_command": "make defconfig",
     "build_command": "make -j`nproc` drivers/gpu/drm/drm_framebuffer.o",
     "compile_programs": [
