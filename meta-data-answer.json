@@ -19,7 +19,7 @@
     "build_dir": "",
     "config_script": "config.sh",
     "build_script": "build.sh",
-    "config_command": "autoreconf && ./configure",
+    "config_command": "./autogen.sh && ./configure",
     "build_command": "make CFLAGS='-fcommon' -j32",
     "compile_programs": [],
     "answer": "357: free(item->struct_name);"
