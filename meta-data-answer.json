@@ -1,0 +1,854 @@
+[
+  {
+    "id": 1,
+    "subject": "p11-kit",
+    "bug_id": "memory-leak-1",
+    "bug_type": "Memory Leak",
+    "source": {
+      "src-file": "trust/asn1.c",
+      "procedure": "p11_asn1_cache_take",
+      "line": 350,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "trust/asn1.c",
+      "procedure": "p11_asn1_cache_take",
+      "line": 356,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "autoreconf && ./configure",
+    "build_command": "make CFLAGS='-fcommon' -j32",
+    "compile_programs": [],
+    "answer": "357: free(item->struct_name);"
+  },
+  {
+    "id": 2,
+    "subject": "snort",
+    "bug_id": "memory-leak-1",
+    "bug_type": "Memory Leak",
+    "source": {
+      "src-file": "src/sfutil/ipobj.c",
+      "procedure": "ipset_add",
+      "line": 125,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "src/sfutil/ipobj.c",
+      "procedure": "ipset_add",
+      "line": 135,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "autoreconf && ./configure",
+    "build_command": "make CFLAGS='-fcommon' -j32",
+    "compile_programs": [],
+    "answer": "136: if (__efffix_tmp == -1) free(p);"
+  },
+  {
+    "id": 3,
+    "subject": "snort",
+    "bug_id": "memory-leak-2",
+    "bug_type": "Memory Leak",
+    "source": {
+      "src-file": "src/sfutil/ipobj.c",
+      "procedure": "ipset_add",
+      "line": 125,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "src/sfutil/ipobj.c",
+      "procedure": "ipset_add",
+      "line": 137,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "autoreconf && ./configure",
+    "build_command": "make CFLAGS='-fcommon' -j32",
+    "compile_programs": [],
+    "answer": "138: if (__efffix_tmp == -1) free(p);"
+  },
+  {
+    "id": 4,
+    "subject": "snort",
+    "bug_id": "memory-leak-3",
+    "bug_type": "Memory Leak",
+    "source": {
+      "src-file": "src/sfutil/ipobj.c",
+      "procedure": "portset_add",
+      "line": 233,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "src/sfutil/ipobj.c",
+      "procedure": "portset_add",
+      "line": 241,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "autoreconf && ./configure",
+    "build_command": "make CFLAGS='-fcommon' -j32",
+    "compile_programs": [],
+    "answer": "243: if (__efffix_tmp == -1) free(p);"
+  },
+  {
+    "id": 5,
+    "subject": "snort",
+    "bug_id": "memory-leak-4",
+    "bug_type": "Memory Leak",
+    "source": {
+      "src-file": "src/sfutil/sfportobject.c",
+      "procedure": "PortObjectAddPort",
+      "line": 800,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "src/sfutil/sfportobject.c",
+      "procedure": "PortObjectAddPort",
+      "line": 814,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "autoreconf && ./configure",
+    "build_command": "make CFLAGS='-fcommon' -j32",
+    "compile_programs": [],
+    "answer": "815: if (__efffix_tmp == -1) free(poi);"
+  },
+  {
+    "id": 6,
+    "subject": "snort",
+    "bug_id": "memory-leak-5",
+    "bug_type": "Memory Leak",
+    "source": {
+      "src-file": "src/sfutil/sfportobject.c",
+      "procedure": "PortObjectAddRange",
+      "line": 825,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "src/sfutil/sfportobject.c",
+      "procedure": "PortObjectAddRange",
+      "line": 839,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "autoreconf && ./configure",
+    "build_command": "make CFLAGS='-fcommon' -j32",
+    "compile_programs": [],
+    "answer": "840: if (__efffix_tmp == -1) free(poi);"
+  },
+  {
+    "id": 7,
+    "subject": "snort",
+    "bug_id": "memory-leak-6",
+    "bug_type": "Memory Leak",
+    "source": {
+      "src-file": "src/sfutil/sfportobject.c",
+      "procedure": "PortObjectAppend",
+      "line": 1479,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "src/sfutil/sfportobject.c",
+      "procedure": "PortObjectAppend",
+      "line": 1487,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "autoreconf && ./configure",
+    "build_command": "make CFLAGS='-fcommon' -j32",
+    "compile_programs": [],
+    "answer": "1488: if (__efffix_tmp == -1) free(poia);"
+  },
+  {
+    "id": 8,
+    "subject": "snort",
+    "bug_id": "memory-leak-7",
+    "bug_type": "Memory Leak",
+    "source": {
+      "src-file": "src/sfutil/sfportobject.c",
+      "procedure": "PortObjectAppendPortObject",
+      "line": 1502,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "src/sfutil/sfportobject.c",
+      "procedure": "PortObjectAppendPortObject",
+      "line": 1507,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "build_command": "make CFLAGS='-fcommon' -j32",
+    "config_command": "autoreconf && ./configure",
+    "compile_programs": [],
+    "answer": "1508: if (__efffix_tmp == -1) free(prid2);"
+  },
+  {
+    "id": 9,
+    "subject": "snort",
+    "bug_id": "memory-leak-8",
+    "bug_type": "Memory Leak",
+    "source": {
+      "src-file": "src/sfutil/sfportobject.c",
+      "procedure": "PortObjectAddRule",
+      "line": 1749,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "src/sfutil/sfportobject.c",
+      "procedure": "PortObjectAddRule",
+      "line": 1757,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "autoreconf && ./configure",
+    "build_command": "make CFLAGS='-fcommon' -j32",
+    "compile_programs": [],
+    "answer": "1759: if (__efffix_tmp == -1) free(pruleid);"
+  },
+  {
+    "id": 10,
+    "subject": "swoole",
+    "bug_id": "memory-leak-1",
+    "bug_type": "Memory Leak",
+    "source": {
+      "src-file": "src/memory/Table.c",
+      "procedure": "swTableColumn_add",
+      "line": 87,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "src/memory/Table.c",
+      "procedure": "swTableColumn_add",
+      "line": 132,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "phpize && ./configure",
+    "build_command": "make -j32",
+    "compile_programs": [],
+    "answer": "133: if (__efffix_tmp == -1) free(col->name);"
+  },
+  {
+    "id": 11,
+    "subject": "swoole",
+    "bug_id": "memory-leak-2",
+    "bug_type": "Memory Leak",
+    "source": {
+      "src-file": "src/pipe/PipeBase.c",
+      "procedure": "swPipeBase_create",
+      "line": 32,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "src/pipe/PipeBase.c",
+      "procedure": "swPipeBase_create",
+      "line": 39,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "phpize && ./configure",
+    "build_command": "make -j32",
+    "compile_programs": [],
+    "answer": "41: free(object);"
+  },
+  {
+    "id": 12,
+    "subject": "swoole",
+    "bug_id": "memory-leak-3",
+    "bug_type": "Memory Leak",
+    "source": {
+      "src-file": "src/reactor/ReactorPoll.c",
+      "procedure": "swReactorPoll_create",
+      "line": 50,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "src/reactor/ReactorPoll.c",
+      "procedure": "swReactorPoll_create",
+      "line": 57,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "phpize && ./configure",
+    "build_command": "make -j32",
+    "compile_programs": [],
+    "answer": "59: free(object->fds);"
+  },
+  {
+    "id": 13,
+    "subject": "x264",
+    "bug_id": "memory-leak-1",
+    "bug_type": "Memory Leak",
+    "source": {
+      "src-file": "filters/video/cache.c",
+      "procedure": "init",
+      "line": 66,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "filters/video/cache.c",
+      "procedure": "init",
+      "line": 74,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "./configure",
+    "build_command": "make -j32",
+    "compile_programs": [],
+    "answer": "75: free(h->cache);"
+  },
+  {
+    "id": 14,
+    "subject": "x264",
+    "bug_id": "memory-leak-2",
+    "bug_type": "Memory Leak",
+    "source": {
+      "src-file": "filters/video/source.c",
+      "procedure": "init",
+      "line": 42,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "filters/video/source.c",
+      "procedure": "init",
+      "line": 48,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "./configure",
+    "build_command": "make -j32",
+    "compile_programs": [],
+    "answer": "49: free(h);"
+  },
+  {
+    "id": 15,
+    "subject": "x264",
+    "bug_id": "memory-leak-3",
+    "bug_type": "Memory Leak",
+    "source": {
+      "src-file": "input/avs.c",
+      "procedure": "open_file",
+      "line": 267,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "input/avs.c",
+      "procedure": "open_file",
+      "line": 272,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "./configure",
+    "build_command": "make -j32",
+    "compile_programs": [],
+    "answer": "272: if (__efffix_tmp) free(h);"
+  },
+  {
+    "id": 16,
+    "subject": "x264",
+    "bug_id": "memory-leak-4",
+    "bug_type": "Memory Leak",
+    "source": {
+      "src-file": "input/thread.c",
+      "procedure": "open_file",
+      "line": 54,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "input/thread.c",
+      "procedure": "open_file",
+      "line": 56,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "./configure",
+    "build_command": "make -j32",
+    "compile_programs": [],
+    "answer": "56: if (!h || __efffix_tmp) free(h);"
+  },
+  {
+    "id": 17,
+    "subject": "x264",
+    "bug_id": "memory-leak-5",
+    "bug_type": "Memory Leak",
+    "source": {
+      "src-file": "input/thread.c",
+      "procedure": "open_file",
+      "line": 54,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "input/thread.c",
+      "procedure": "open_file",
+      "line": 62,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "./configure",
+    "build_command": "make -j32",
+    "compile_programs": [],
+    "answer": "61: free(h);"
+  },
+  {
+    "id": 18,
+    "subject": "x264",
+    "bug_id": "memory-leak-6",
+    "bug_type": "Memory Leak",
+    "source": {
+      "src-file": "input/timecode.c",
+      "procedure": "open_file",
+      "line": 347,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "input/timecode.c",
+      "procedure": "open_file",
+      "line": 360,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "./configure",
+    "build_command": "make -j32",
+    "compile_programs": [],
+    "answer": "360: if (h->timebase_num > UINT32_MAX || h->timebase_den > UINT32_MAX) free(h);"
+  },
+  {
+    "id": 19,
+    "subject": "openssl-1",
+    "bug_id": "null-ptr-1",
+    "bug_type": "Null Pointer Dereference",
+    "source": {
+      "src-file": "crypto/x509/x509_vpm.c",
+      "procedure": "X509_VERIFY_PARAM_new",
+      "line": 91,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "crypto/x509/x509_vpm.c",
+      "procedure": "",
+      "line": 92,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "CC=gcc ./config",
+    "build_command": "make",
+    "compile_programs": [
+      "build_crypto"
+    ],
+    "answer": "92: if (!param) return NULL;"
+  },
+  {
+    "id": 20,
+    "subject": "openssl-1",
+    "bug_id": "null-ptr-2",
+    "bug_type": "Null Pointer Dereference",
+    "source": {
+      "src-file": "crypto/dh/dh_check.c",
+      "procedure": "DH_check_pub_key",
+      "line": 128,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "crypto/dh/dh_check.c",
+      "procedure": "",
+      "line": 132,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "CC=gcc ./config",
+    "build_command": "make",
+    "compile_programs": [
+      "build_crypto"
+    ],
+    "answer": "Modifeid BN_new(), which is not bug location"
+  },
+  {
+    "id": 21,
+    "subject": "openssl-1",
+    "bug_id": "null-ptr-3",
+    "bug_type": "Null Pointer Dereference",
+    "source": {
+      "src-file": "crypto/ocsp/ocsp_ht.c",
+      "procedure": "OCSP_sendreq_new",
+      "line": 160,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "crypto/ocsp/ocsp_ht.c",
+      "procedure": "",
+      "line": 161,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "CC=gcc ./config",
+    "build_command": "make",
+    "compile_programs": [
+      "build_crypto"
+    ],
+    "answer": "161: if (!rctx) return NULL;"
+  },
+  {
+    "id": 22,
+    "subject": "openssl-1",
+    "bug_id": "null-ptr-4",
+    "bug_type": "Null Pointer Dereference",
+    "source": {
+      "src-file": "crypto/mem.c",
+      "procedure": "CRYPTO_strdup",
+      "line": 329,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "crypto/mem.c",
+      "procedure": "",
+      "line": 331,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "CC=gcc ./config",
+    "build_command": "make",
+    "compile_programs": [
+      "build_crypto"
+    ],
+    "answer": "331: if (ret == NULL) return NULL;"
+  },
+  {
+    "id": 23,
+    "subject": "openssl-1",
+    "bug_id": "null-ptr-5",
+    "bug_type": "Null Pointer Dereference",
+    "source": {
+      "src-file": "ssl/d1_both.c",
+      "procedure": "dtls1_buffer_message",
+      "line": 1181,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "ssl/d1_both.c",
+      "procedure": "",
+      "line": 1183,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "CC=gcc ./config",
+    "build_command": "make",
+    "compile_programs": [
+      "build_ssl"
+    ],
+    "answer": "1183: if (!frag) return 0;"
+  },
+  {
+    "id": 24,
+    "subject": "openssl-1",
+    "bug_id": "memory-leak-1",
+    "bug_type": "Memory Leak",
+    "source": {
+      "src-file": "crypto/asn1/bio_asn1.c",
+      "procedure": "asn1_bio_new",
+      "line": 153,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "crypto/asn1/bio_asn1.c",
+      "procedure": "",
+      "line": 157,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "CC=gcc ./config",
+    "build_command": "make",
+    "compile_programs": [
+      "build_crypto"
+    ],
+    "answer": "158: OPENSSL_free(ctx);"
+  },
+  {
+    "id": 25,
+    "subject": "openssl-1",
+    "bug_id": "memory-leak-2",
+    "bug_type": "Memory Leak",
+    "source": {
+      "src-file": "crypto/ocsp/ocsp_ht.c",
+      "procedure": "OCSP_sendreq_new",
+      "line": 160,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "crypto/ocsp/ocsp_ht.c",
+      "procedure": "",
+      "line": 171,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "CC=gcc ./config",
+    "build_command": "make",
+    "compile_programs": [
+      "build_crypto"
+    ],
+    "answer": "172: OCSP_REQ_CTX_free(rctx);"
+  },
+  {
+    "id": 26,
+    "subject": "openssl-1",
+    "bug_id": "memory-leak-3",
+    "bug_type": "Memory Leak",
+    "source": {
+      "src-file": "crypto/asn1/asn_mime.c",
+      "procedure": "mime_hdr_new",
+      "line": 833,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "crypto/asn1/asn_mime.c",
+      "procedure": "",
+      "line": 839,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "CC=gcc ./config",
+    "build_command": "make",
+    "compile_programs": [
+      "build_crypto"
+    ],
+    "answer": "835: OPENSSL_free(mhdr);"
+  },
+  {
+    "id": 27,
+    "subject": "openssl-1",
+    "bug_id": "memory-leak-4",
+    "bug_type": "Memory Leak",
+    "source": {
+      "src-file": "engines/ccgost/gost_pmeth.c",
+      "procedure": "pkey_gost_init",
+      "line": 26,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "engines/ccgost/gost_pmeth.c",
+      "procedure": "",
+      "line": 37,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "CC=gcc ./config",
+    "build_command": "make",
+    "compile_programs": [
+      "build_engines"
+    ],
+    "answer": "Function reimplemented,Note: alternative fix: 41: free(data);"
+  },
+  {
+    "id": 28,
+    "subject": "openssl-3",
+    "bug_id": "null-ptr-1",
+    "bug_type": "Null Pointer Dereference",
+    "source": {
+      "src-file": "apps/lib/s_cb.c",
+      "procedure": "ssl_excert_prepend",
+      "line": 957,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "",
+      "procedure": "",
+      "line": 959,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "CC=gcc ./config",
+    "build_command": "make -j32",
+    "compile_programs": [
+      "build_apps"
+    ],
+    "answer": "959: if (exc == NULL) return 1;"
+  },
+  {
+    "id": 30,
+    "subject": "openssl-3",
+    "bug_id": "null-ptr-2",
+    "bug_type": "Null Pointer Dereference",
+    "source": {
+      "src-file": "apps/s_server.c",
+      "procedure": "add_session",
+      "line": 3575,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "",
+      "procedure": "",
+      "line": 3578,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "CC=gcc ./config",
+    "build_command": "make -j32",
+    "compile_programs": [
+      "build_apps"
+    ],
+    "answer": "3578: if (sess == NULL) return 0;"
+  },
+  {
+    "id": 30,
+    "subject": "openssl-3",
+    "bug_id": "null-ptr-3",
+    "bug_type": "Null Pointer Dereference",
+    "source": {
+      "src-file": "test/params_test.c",
+      "procedure": "init_object",
+      "line": 100,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "",
+      "procedure": "",
+      "line": 102,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "CC=gcc ./config",
+    "build_command": "make -j32",
+    "compile_programs": [
+      "build_tests"
+    ],
+    "answer": "102: if (obj == NULL) goto fail;"
+  },
+  {
+    "id": 31,
+    "subject": "linux-kernel-5",
+    "bug_id": "null-ptr-1",
+    "bug_type": "Null Pointer Dereference",
+    "source": {
+      "src-file": "tools/lib/subcmd/help.c",
+      "procedure": "add_cmdname",
+      "line": 18,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "tools/lib/subcmd/help.c",
+      "procedure": "add_cmdname",
+      "line": 20,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "make defconfig",
+    "build_command": "make -j`nproc` drivers/gpu/drm/drm_framebuffer.o",
+    "compile_programs": [
+      "-C tools/lib/subcmd help.o"
+    ]
+  },
+  {
+    "id": 32,
+    "subject": "linux-kernel-5",
+    "bug_id": "memory-leak-1",
+    "bug_type": "Memory Leak",
+    "source": {
+      "src-file": "tools/objtool/elf.c",
+      "procedure": "read_sections",
+      "line": 161,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "tools/objtool/elf.c",
+      "procedure": "read_sections",
+      "line": 207,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "make defconfig",
+    "build_command": "make -j`nproc` drivers/gpu/drm/drm_framebuffer.o",
+    "compile_programs": [
+      "-C tools/objtool elf.o"
+    ]
+  },
+  {
+    "id": 33,
+    "subject": "linux-kernel-5",
+    "bug_id": "memory-leak-2",
+    "bug_type": "Memory Leak",
+    "source": {
+      "src-file": "tools/objtool/orc_gen.c",
+      "procedure": "create_orc_entry",
+      "line": 113,
+      "exp": ""
+    },
+    "sink": {
+      "src-file": "tools/objtool/orc_gen.c",
+      "procedure": "create_orc_entry",
+      "line": 126,
+      "exp": ""
+    },
+    "build_dir": "",
+    "config_script": "config.sh",
+    "build_script": "build.sh",
+    "config_command": "make defconfig",
+    "build_command": "make -j`nproc` drivers/gpu/drm/drm_framebuffer.o",
+    "compile_programs": [
+      "-C tools/objtool orc_gen.o"
+    ]
+  }
+]
