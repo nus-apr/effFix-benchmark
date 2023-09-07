@@ -1,5 +1,6 @@
 #!/bin/bash
-
+script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+project_name=$(echo $script_dir | rev | cut -d "/" -f 2 | rev)
 dir_name=$1
 current_dir=$PWD
 mkdir -p $dir_name
