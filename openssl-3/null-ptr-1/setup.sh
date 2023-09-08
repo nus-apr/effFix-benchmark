@@ -9,14 +9,16 @@ mkdir -p $dir_name
 cd $dir_name
 mkdir dev-patch
 
-if [ -d "/data/$project_name" ]
+download_link=https://raw.githubusercontent.com/nus-apr/efffix-benchmark/main/archives/$project_name.tar.gz
+mkdir tmp
+wget $download_link
+tar -xzf $project_name.tar.gz -C tmp
+mv tmp/$project_name src
+rm -rf tmp
+
+if [ -d "/data/$project_name/pre" ]
 then
-    cp -rf /data/$project_name/* $dir_name
-else
-  download_link=https://raw.githubusercontent.com/nus-apr/efffix-benchmark/main/archives/$project_name.tar.gz
-  mkdir tmp
-  wget $download_link
-  tar -xzf $project_name.tar.gz -C tmp
-  mv tmp/$project_name src
-  rm -rf tmp
+    cp -rf /data/$project_name/pre $dir_name
 fi
+
+
