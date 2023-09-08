@@ -18,5 +18,5 @@ else
   wget $download_link
   tar -xzf $project_name.tar.gz -C tmp
   mv tmp/$project_name src
-  rm -rf tmp`
+  rm -rf tmp
 fi
