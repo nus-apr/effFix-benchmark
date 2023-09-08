@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 LABEL maintainer="Ridwan Shariffdeen <rshariffdeen@gmail.com>"
-
+COPY --from=yuntongzhang/efffix:experiments /data /data
 RUN apt-get update && apt-get upgrade -y && apt-get autoremove -y
 
 # install some basic software
