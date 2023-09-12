@@ -692,7 +692,7 @@
     ]
   },
   {
-    "id": 30,
+    "id": 29,
     "subject": "openssl-3",
     "bug_id": "null-ptr-2",
     "bug_type": "Null Pointer Dereference",
