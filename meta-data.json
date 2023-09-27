@@ -254,6 +254,7 @@
       "src-file": "src/pipe/PipeBase.c",
       "procedure": "swPipeBase_create",
       "line": 39,
+      "footpatch-line": 41,
       "exp": ""
     },
     "build_dir": "",
@@ -278,6 +279,7 @@
       "src-file": "src/reactor/ReactorPoll.c",
       "procedure": "swReactorPoll_create",
       "line": 57,
+      "footpatch-line": 59,
       "exp": ""
     },
     "build_dir": "",
@@ -326,6 +328,7 @@
       "src-file": "filters/video/source.c",
       "procedure": "init",
       "line": 48,
+      "footpatch-line": 49,
       "exp": ""
     },
     "build_dir": "",
@@ -398,6 +401,7 @@
       "src-file": "input/thread.c",
       "procedure": "open_file",
       "line": 62,
+      "footpatch-line": 63,
       "exp": ""
     },
     "build_dir": "",
@@ -444,7 +448,7 @@
     },
     "sink": {
       "src-file": "crypto/x509/x509_vpm.c",
-      "procedure": "",
+      "procedure": "X509_VERIFY_PARAM_new",
       "line": 92,
       "exp": ""
     },
@@ -470,7 +474,7 @@
     },
     "sink": {
       "src-file": "crypto/dh/dh_check.c",
-      "procedure": "",
+      "procedure": "DH_check_pub_key",
       "line": 132,
       "exp": ""
     },
@@ -496,7 +500,7 @@
     },
     "sink": {
       "src-file": "crypto/ocsp/ocsp_ht.c",
-      "procedure": "",
+      "procedure": "OCSP_sendreq_new",
       "line": 161,
       "exp": ""
     },
@@ -522,7 +526,7 @@
     },
     "sink": {
       "src-file": "crypto/mem.c",
-      "procedure": "",
+      "procedure": "CRYPTO_strdup",
       "line": 331,
       "exp": ""
     },
@@ -548,7 +552,7 @@
     },
     "sink": {
       "src-file": "ssl/d1_both.c",
-      "procedure": "",
+      "procedure": "dtls1_buffer_message",
       "line": 1183,
       "exp": ""
     },
@@ -574,7 +578,7 @@
     },
     "sink": {
       "src-file": "crypto/asn1/bio_asn1.c",
-      "procedure": "",
+      "procedure": "asn1_bio_new",
       "line": 157,
       "exp": ""
     },
@@ -600,7 +604,7 @@
     },
     "sink": {
       "src-file": "crypto/ocsp/ocsp_ht.c",
-      "procedure": "",
+      "procedure": "OCSP_sendreq_new",
       "line": 171,
       "exp": ""
     },
@@ -626,7 +630,7 @@
     },
     "sink": {
       "src-file": "crypto/asn1/asn_mime.c",
-      "procedure": "",
+      "procedure": "mime_hdr_new",
       "line": 839,
       "exp": ""
     },
@@ -652,7 +656,7 @@
     },
     "sink": {
       "src-file": "engines/ccgost/gost_pmeth.c",
-      "procedure": "",
+      "procedure": "pkey_gost_init",
       "line": 37,
       "exp": ""
     },
@@ -677,8 +681,8 @@
       "exp": ""
     },
     "sink": {
-      "src-file": "",
-      "procedure": "",
+      "src-file": "apps/lib/s_cb.c",
+      "procedure": "ssl_excert_prepend",
       "line": 959,
       "exp": ""
     },
@@ -703,8 +707,8 @@
       "exp": ""
     },
     "sink": {
-      "src-file": "",
-      "procedure": "",
+      "src-file": "apps/s_server.c",
+      "procedure": "add_session",
       "line": 3578,
       "exp": ""
     },
@@ -729,8 +733,8 @@
       "exp": ""
     },
     "sink": {
-      "src-file": "",
-      "procedure": "",
+      "src-file": "test/params_test.c",
+      "procedure": "init_object",
       "line": 102,
       "exp": ""
     },
