@@ -19,3 +19,11 @@ C Programs with memory-errors detected by Infer (Pulse)
 * Yuntong Zhang
 * Ridwan Shariffdeen
 
+
+
+## Remarks on keys in meta-data file
+
+- compile_programs:
+    - used by FootPatch during repair.
+    - used by SAVER in its preparation phase.
+- source, sink: used by SAVER to populate its config file.

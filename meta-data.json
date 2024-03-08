@@ -824,5 +824,18 @@
     "compile_programs": [
       "-C tools/objtool orc_gen.o"
     ]
+  },
+  {
+    "id": 34,
+    "subject": "grub",
+    "bug_id": "grub-new-df-1",
+    "bug_type": "Double Free",
+    "old_bug_id_in_saver": "grub-df-1",
+    "source": {
+    },
+    "sink": {
+
+    }
+
   }
 ]
