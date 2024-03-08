@@ -30,3 +30,5 @@ C Programs with memory-errors detected by Infer (Pulse)
 - source, sink: used by SAVER to populate its config file.
 - build_command: used by EffFix pre stage to analyze the entire project.
 - pulse_extra_command: extra command line arguments required for Pulse to detect the bug.
+
+- old_bug_id_in_saver: only for UAF/DF bugs. Maps to the original bug id in the SAVER benchmark.
