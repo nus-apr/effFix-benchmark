@@ -26,4 +26,7 @@ C Programs with memory-errors detected by Infer (Pulse)
 - compile_programs:
     - used by FootPatch during repair.
     - used by SAVER in its preparation phase.
+    - used by EffFix during repair stage, when compiling one file is sufficient.
 - source, sink: used by SAVER to populate its config file.
+- build_command: used by EffFix pre stage to analyze the entire project.
+- pulse_extra_command: extra command line arguments required for Pulse to detect the bug.

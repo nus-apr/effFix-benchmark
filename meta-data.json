@@ -7,14 +7,12 @@
     "source": {
       "src-file": "trust/asn1.c",
       "procedure": "p11_asn1_cache_take",
-      "line": 350,
-      "exp": ""
+      "line": 350
     },
     "sink": {
       "src-file": "trust/asn1.c",
       "procedure": "p11_asn1_cache_take",
-      "line": 356,
-      "exp": ""
+      "line": 356
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -31,14 +29,12 @@
     "source": {
       "src-file": "src/sfutil/ipobj.c",
       "procedure": "ipset_add",
-      "line": 125,
-      "exp": ""
+      "line": 125
     },
     "sink": {
       "src-file": "src/sfutil/ipobj.c",
       "procedure": "ipset_add",
-      "line": 135,
-      "exp": ""
+      "line": 135
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -55,14 +51,12 @@
     "source": {
       "src-file": "src/sfutil/ipobj.c",
       "procedure": "ipset_add",
-      "line": 125,
-      "exp": ""
+      "line": 125
     },
     "sink": {
       "src-file": "src/sfutil/ipobj.c",
       "procedure": "ipset_add",
-      "line": 137,
-      "exp": ""
+      "line": 137
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -79,14 +73,12 @@
     "source": {
       "src-file": "src/sfutil/ipobj.c",
       "procedure": "portset_add",
-      "line": 233,
-      "exp": ""
+      "line": 233
     },
     "sink": {
       "src-file": "src/sfutil/ipobj.c",
       "procedure": "portset_add",
-      "line": 241,
-      "exp": ""
+      "line": 241
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -103,14 +95,12 @@
     "source": {
       "src-file": "src/sfutil/sfportobject.c",
       "procedure": "PortObjectAddPort",
-      "line": 800,
-      "exp": ""
+      "line": 800
     },
     "sink": {
       "src-file": "src/sfutil/sfportobject.c",
       "procedure": "PortObjectAddPort",
-      "line": 814,
-      "exp": ""
+      "line": 814
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -127,14 +117,12 @@
     "source": {
       "src-file": "src/sfutil/sfportobject.c",
       "procedure": "PortObjectAddRange",
-      "line": 825,
-      "exp": ""
+      "line": 825
     },
     "sink": {
       "src-file": "src/sfutil/sfportobject.c",
       "procedure": "PortObjectAddRange",
-      "line": 839,
-      "exp": ""
+      "line": 839
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -151,14 +139,12 @@
     "source": {
       "src-file": "src/sfutil/sfportobject.c",
       "procedure": "PortObjectAppend",
-      "line": 1479,
-      "exp": ""
+      "line": 1479
     },
     "sink": {
       "src-file": "src/sfutil/sfportobject.c",
       "procedure": "PortObjectAppend",
-      "line": 1487,
-      "exp": ""
+      "line": 1487
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -175,14 +161,12 @@
     "source": {
       "src-file": "src/sfutil/sfportobject.c",
       "procedure": "PortObjectAppendPortObject",
-      "line": 1502,
-      "exp": ""
+      "line": 1502
     },
     "sink": {
       "src-file": "src/sfutil/sfportobject.c",
       "procedure": "PortObjectAppendPortObject",
-      "line": 1507,
-      "exp": ""
+      "line": 1507
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -199,14 +183,12 @@
     "source": {
       "src-file": "src/sfutil/sfportobject.c",
       "procedure": "PortObjectAddRule",
-      "line": 1749,
-      "exp": ""
+      "line": 1749
     },
     "sink": {
       "src-file": "src/sfutil/sfportobject.c",
       "procedure": "PortObjectAddRule",
-      "line": 1757,
-      "exp": ""
+      "line": 1757
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -223,14 +205,12 @@
     "source": {
       "src-file": "src/memory/Table.c",
       "procedure": "swTableColumn_add",
-      "line": 87,
-      "exp": ""
+      "line": 87
     },
     "sink": {
       "src-file": "src/memory/Table.c",
       "procedure": "swTableColumn_add",
-      "line": 132,
-      "exp": ""
+      "line": 132
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -247,15 +227,13 @@
     "source": {
       "src-file": "src/pipe/PipeBase.c",
       "procedure": "swPipeBase_create",
-      "line": 32,
-      "exp": ""
+      "line": 32
     },
     "sink": {
       "src-file": "src/pipe/PipeBase.c",
       "procedure": "swPipeBase_create",
       "line": 39,
-      "footpatch-line": 41,
-      "exp": ""
+      "footpatch-line": 41
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -272,15 +250,13 @@
     "source": {
       "src-file": "src/reactor/ReactorPoll.c",
       "procedure": "swReactorPoll_create",
-      "line": 50,
-      "exp": ""
+      "line": 50
     },
     "sink": {
       "src-file": "src/reactor/ReactorPoll.c",
       "procedure": "swReactorPoll_create",
       "line": 57,
-      "footpatch-line": 59,
-      "exp": ""
+      "footpatch-line": 59
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -297,14 +273,12 @@
     "source": {
       "src-file": "filters/video/cache.c",
       "procedure": "init",
-      "line": 66,
-      "exp": ""
+      "line": 66
     },
     "sink": {
       "src-file": "filters/video/cache.c",
       "procedure": "init",
-      "line": 74,
-      "exp": ""
+      "line": 74
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -321,15 +295,13 @@
     "source": {
       "src-file": "filters/video/source.c",
       "procedure": "init",
-      "line": 42,
-      "exp": ""
+      "line": 42
     },
     "sink": {
       "src-file": "filters/video/source.c",
       "procedure": "init",
       "line": 48,
-      "footpatch-line": 49,
-      "exp": ""
+      "footpatch-line": 49
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -346,14 +318,12 @@
     "source": {
       "src-file": "input/avs.c",
       "procedure": "open_file",
-      "line": 267,
-      "exp": ""
+      "line": 267
     },
     "sink": {
       "src-file": "input/avs.c",
       "procedure": "open_file",
-      "line": 272,
-      "exp": ""
+      "line": 272
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -370,14 +340,12 @@
     "source": {
       "src-file": "input/thread.c",
       "procedure": "open_file",
-      "line": 54,
-      "exp": ""
+      "line": 54
     },
     "sink": {
       "src-file": "input/thread.c",
       "procedure": "open_file",
-      "line": 56,
-      "exp": ""
+      "line": 56
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -394,15 +362,13 @@
     "source": {
       "src-file": "input/thread.c",
       "procedure": "open_file",
-      "line": 54,
-      "exp": ""
+      "line": 54
     },
     "sink": {
       "src-file": "input/thread.c",
       "procedure": "open_file",
       "line": 62,
-      "footpatch-line": 63,
-      "exp": ""
+      "footpatch-line": 63
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -419,14 +385,12 @@
     "source": {
       "src-file": "input/timecode.c",
       "procedure": "open_file",
-      "line": 347,
-      "exp": ""
+      "line": 347
     },
     "sink": {
       "src-file": "input/timecode.c",
       "procedure": "open_file",
-      "line": 360,
-      "exp": ""
+      "line": 360
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -443,14 +407,12 @@
     "source": {
       "src-file": "crypto/x509/x509_vpm.c",
       "procedure": "X509_VERIFY_PARAM_new",
-      "line": 91,
-      "exp": ""
+      "line": 91
     },
     "sink": {
       "src-file": "crypto/x509/x509_vpm.c",
       "procedure": "X509_VERIFY_PARAM_new",
-      "line": 92,
-      "exp": ""
+      "line": 92
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -469,14 +431,12 @@
     "source": {
       "src-file": "crypto/dh/dh_check.c",
       "procedure": "DH_check_pub_key",
-      "line": 128,
-      "exp": ""
+      "line": 128
     },
     "sink": {
       "src-file": "crypto/dh/dh_check.c",
       "procedure": "DH_check_pub_key",
-      "line": 132,
-      "exp": ""
+      "line": 132
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -495,14 +455,12 @@
     "source": {
       "src-file": "crypto/ocsp/ocsp_ht.c",
       "procedure": "OCSP_sendreq_new",
-      "line": 160,
-      "exp": ""
+      "line": 160
     },
     "sink": {
       "src-file": "crypto/ocsp/ocsp_ht.c",
       "procedure": "OCSP_sendreq_new",
-      "line": 161,
-      "exp": ""
+      "line": 161
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -521,14 +479,12 @@
     "source": {
       "src-file": "crypto/mem.c",
       "procedure": "CRYPTO_strdup",
-      "line": 329,
-      "exp": ""
+      "line": 329
     },
     "sink": {
       "src-file": "crypto/mem.c",
       "procedure": "CRYPTO_strdup",
-      "line": 331,
-      "exp": ""
+      "line": 331
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -547,14 +503,12 @@
     "source": {
       "src-file": "ssl/d1_both.c",
       "procedure": "dtls1_buffer_message",
-      "line": 1181,
-      "exp": ""
+      "line": 1181
     },
     "sink": {
       "src-file": "ssl/d1_both.c",
       "procedure": "dtls1_buffer_message",
-      "line": 1183,
-      "exp": ""
+      "line": 1183
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -573,14 +527,12 @@
     "source": {
       "src-file": "crypto/asn1/bio_asn1.c",
       "procedure": "asn1_bio_new",
-      "line": 153,
-      "exp": ""
+      "line": 153
     },
     "sink": {
       "src-file": "crypto/asn1/bio_asn1.c",
       "procedure": "asn1_bio_new",
-      "line": 157,
-      "exp": ""
+      "line": 157
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -599,14 +551,12 @@
     "source": {
       "src-file": "crypto/ocsp/ocsp_ht.c",
       "procedure": "OCSP_sendreq_new",
-      "line": 160,
-      "exp": ""
+      "line": 160
     },
     "sink": {
       "src-file": "crypto/ocsp/ocsp_ht.c",
       "procedure": "OCSP_sendreq_new",
-      "line": 171,
-      "exp": ""
+      "line": 171
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -625,14 +575,12 @@
     "source": {
       "src-file": "crypto/asn1/asn_mime.c",
       "procedure": "mime_hdr_new",
-      "line": 833,
-      "exp": ""
+      "line": 833
     },
     "sink": {
       "src-file": "crypto/asn1/asn_mime.c",
       "procedure": "mime_hdr_new",
-      "line": 839,
-      "exp": ""
+      "line": 839
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -651,14 +599,12 @@
     "source": {
       "src-file": "engines/ccgost/gost_pmeth.c",
       "procedure": "pkey_gost_init",
-      "line": 26,
-      "exp": ""
+      "line": 26
     },
     "sink": {
       "src-file": "engines/ccgost/gost_pmeth.c",
       "procedure": "pkey_gost_init",
-      "line": 37,
-      "exp": ""
+      "line": 37
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -677,14 +623,12 @@
     "source": {
       "src-file": "apps/lib/s_cb.c",
       "procedure": "ssl_excert_prepend",
-      "line": 957,
-      "exp": ""
+      "line": 957
     },
     "sink": {
       "src-file": "apps/lib/s_cb.c",
       "procedure": "ssl_excert_prepend",
-      "line": 959,
-      "exp": ""
+      "line": 959
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -703,14 +647,12 @@
     "source": {
       "src-file": "apps/s_server.c",
       "procedure": "add_session",
-      "line": 3575,
-      "exp": ""
+      "line": 3575
     },
     "sink": {
       "src-file": "apps/s_server.c",
       "procedure": "add_session",
-      "line": 3578,
-      "exp": ""
+      "line": 3578
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -729,14 +671,12 @@
     "source": {
       "src-file": "test/params_test.c",
       "procedure": "init_object",
-      "line": 100,
-      "exp": ""
+      "line": 100
     },
     "sink": {
       "src-file": "test/params_test.c",
       "procedure": "init_object",
-      "line": 102,
-      "exp": ""
+      "line": 102
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -755,14 +695,12 @@
     "source": {
       "src-file": "tools/lib/subcmd/help.c",
       "procedure": "add_cmdname",
-      "line": 18,
-      "exp": ""
+      "line": 18
     },
     "sink": {
       "src-file": "tools/lib/subcmd/help.c",
       "procedure": "add_cmdname",
-      "line": 20,
-      "exp": ""
+      "line": 20
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -781,14 +719,12 @@
     "source": {
       "src-file": "tools/objtool/elf.c",
       "procedure": "read_sections",
-      "line": 161,
-      "exp": ""
+      "line": 161
     },
     "sink": {
       "src-file": "tools/objtool/elf.c",
       "procedure": "read_sections",
-      "line": 207,
-      "exp": ""
+      "line": 207
     },
     "build_dir": "",
     "config_script": "config.sh",
@@ -807,14 +743,12 @@
     "source": {
       "src-file": "tools/objtool/orc_gen.c",
       "procedure": "create_orc_entry",
-      "line": 113,
-      "exp": ""
+      "line": 113
     },
     "sink": {
       "src-file": "tools/objtool/orc_gen.c",
       "procedure": "create_orc_entry",
-      "line": 126,
-      "exp": ""
+      "line": 126
     },
     "build_dir": "",
     "config_script": "config.sh",
