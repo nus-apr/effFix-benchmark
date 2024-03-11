@@ -776,8 +776,7 @@
     },
     "config_script": "config.sh",
     "config_command": "./autogen.sh && ./configure",
-    "build_command": "make -j`nproc` libgrubmods.a",
-    "has_instrumentation": false
+    "build_command": "make -j`nproc` libgrubmods.a"
   },
   {
     "id": 35,
@@ -797,8 +796,7 @@
     },
     "config_script": "config.sh",
     "config_command": "./autogen.sh && ./configure",
-    "build_command": "make -j`nproc` libgrubmods.a",
-    "has_instrumentation": false
+    "build_command": "make -j`nproc` libgrubmods.a"
   },
   {
     "id": 36,
@@ -818,8 +816,7 @@
     },
     "config_script": "config.sh",
     "config_command": "./autogen.sh",
-    "build_command": "make -j`nproc`",
-    "has_intrumentation": true
+    "build_command": "make -j`nproc`"
   },
   {
     "id": 37,
@@ -839,8 +836,7 @@
     },
     "config_script": "config.sh",
     "config_command": "./autogen.sh",
-    "build_command": "make p11-kit-server -j`nproc`",
-    "has_intrumentation": true
+    "build_command": "make p11-kit-server -j`nproc`"
   },
   {
     "id": 38,
@@ -861,8 +857,7 @@
     "config_script": "config.sh",
     "config_command": "./autogen.sh && CC=gcc CFLAGS='-Wno-error' ./configure && make grub_script.tab.h && make grub_script.yy.h && cd grub-core && make clean && cd ..",
     "build_dir": "grub-core",
-    "build_command": "make -j`nproc` normal.module",
-    "has_instrumentation": true
+    "build_command": "make -j`nproc` normal.module"
   },
   {
     "id": 39,
@@ -883,8 +878,7 @@
     "config_script": "config.sh",
     "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure",
     "build_dir": "grub-core",
-    "build_command": "make -j`nproc` usb.module",
-    "has_instrumentation": true
+    "build_command": "make -j`nproc` usb.module"
   },
   {
     "id": 40,
@@ -905,8 +899,7 @@
     "config_script": "config.sh",
     "config_command": "./autogen.sh && ./configure",
     "build_dir": "grub-core",
-    "build_command": "make -j`nproc` xnu.module",
-    "has_instrumentation": false
+    "build_command": "make -j`nproc` xnu.module"
   },
   {
     "id": 41,
@@ -927,8 +920,7 @@
     "config_script": "config.sh",
     "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure",
     "build_dir": "grub-core",
-    "build_command": "make -j`nproc` scsi.module",
-    "has_instrumentation": true
+    "build_command": "make -j`nproc` scsi.module"
   },
   {
     "id": 42,
@@ -949,8 +941,7 @@
     "config_script": "config.sh",
     "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure",
     "build_dir": "grub-core",
-    "build_command": "make -j`nproc` search_label.module",
-    "has_instrumentation": true
+    "build_command": "make -j`nproc` search_label.module"
   },
   {
     "id": 43,
@@ -971,8 +962,7 @@
     "config_script": "config.sh",
     "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure",
     "build_dir": "grub-core",
-    "build_command": "make -j`nproc` luks.module",
-    "has_instrumentation": true
+    "build_command": "make -j`nproc` luks.module"
   },
   {
     "id": 44,
@@ -993,8 +983,7 @@
     "config_script": "config.sh",
     "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure",
     "build_dir": "grub-core",
-    "build_command": "make -j`nproc` kernel.exec gettext.module",
-    "has_instrumentation": false
+    "build_command": "make -j`nproc` kernel.exec gettext.module"
   },
   {
     "id": 45,
@@ -1015,8 +1004,7 @@
     "config_script": "config.sh",
     "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure",
     "build_dir": "src/lxc",
-    "build_command": "make -j`nproc` lxc-execute",
-    "has_instrumentation": false
+    "build_command": "make -j`nproc` lxc-execute"
   },
   {
     "id": 46,
@@ -1037,8 +1025,7 @@
     "config_script": "config.sh",
     "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure --enable-gnutls",
     "build_dir": "src/lxc",
-    "build_command": "make -j`nproc`",
-    "has_instrumentation": false
+    "build_command": "make -j`nproc`"
   },
   {
     "id": 47,
@@ -1058,7 +1045,6 @@
     },
     "config_script": "config.sh",
     "config_command": "./autogen.sh",
-    "build_command": "make -j`nproc` p11-kit-server",
-    "has_instrumentation": false
+    "build_command": "make -j`nproc` p11-kit-server"
   }
 ]
