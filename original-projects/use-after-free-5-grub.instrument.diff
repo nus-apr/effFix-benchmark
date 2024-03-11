@@ -1,0 +1,23 @@
+diff --git a/grub-core/commands/search.c b/grub-core/commands/search.c
+index 16143a3..8f468af 100644
+--- a/grub-core/commands/search.c
++++ b/grub-core/commands/search.c
+@@ -335,3 +335,18 @@ GRUB_MOD_FINI(search_label)
+ {
+   grub_unregister_command (cmd);
+ }
++
++
++// fake main
++int main() {
++  struct search_ctx ctx = {
++    .key = NULL,
++    .var = NULL,
++    .no_floppy = 1,
++    .hints = NULL,
++    .nhints = 0,
++    .count = 0,
++    .is_cache = 0
++  };
++  try(&ctx);
++}

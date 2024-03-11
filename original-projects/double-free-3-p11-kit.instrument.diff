@@ -1,0 +1,12 @@
+diff --git a/trust/extract.c b/trust/extract.c
+index b93571b..0d75dea 100644
+--- a/trust/extract.c
++++ b/trust/extract.c
+@@ -309,7 +309,6 @@ p11_trust_extract_compat (int argc,
+ 		return_val_if_fail (path != NULL, 1);
+ 		execv (path, argv);
+ 		error = errno;
+-		free (path);
+ 	}
+ 
+ 	/* At this point we have no command */

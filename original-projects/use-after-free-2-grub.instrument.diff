@@ -1,0 +1,40 @@
+diff --git a/grub-core/bus/usb/usbtrans.c b/grub-core/bus/usb/usbtrans.c
+index b614997..e5391ad 100644
+--- a/grub-core/bus/usb/usbtrans.c
++++ b/grub-core/bus/usb/usbtrans.c
+@@ -446,3 +446,35 @@ grub_usb_bulk_read_extended (grub_usb_device_t dev,
+   return grub_usb_bulk_readwrite (dev, endpoint, size, data,
+ 				  GRUB_USB_TRANSFER_TYPE_IN, timeout, actual);
+ }
++
++
++#include <stddef.h>
++void *malloc_non_null(size_t size) {
++  void *res = malloc(size);
++  if (!res) {
++    exit(0);
++  }
++  return res;
++}
++
++// fake main
++int main() {
++  grub_usb_transfer_t transfer = malloc_non_null(sizeof(struct grub_usb_transfer));
++  transfer->dev = malloc_non_null(sizeof(struct grub_usb_device));
++  transfer->transactions = malloc_non_null(sizeof(struct grub_usb_transaction));
++  transfer->dir = malloc_non_null(sizeof(grub_transfer_type_t));
++  transfer->data = malloc_non_null(10);
++  transfer->data_chunk = malloc_non_null(10);
++  transfer->endpoint = rand();
++  transfer->last_trans = rand();
++  transfer->size = rand();
++
++  grub_usb_bulk_finish_readwrite(transfer);
++
++  free(transfer->dev);
++  free(transfer->transactions);
++  free(transfer->dir);
++  free(transfer->data);
++  free(transfer->data_chunk);
++  free(transfer);
++}

@@ -1,0 +1,161 @@
+diff --git a/crypto/asn1/asn_mime.c b/crypto/asn1/asn_mime.c
+index 54a704a..bc06ed1 100755
+--- a/crypto/asn1/asn_mime.c
++++ b/crypto/asn1/asn_mime.c
+@@ -803,7 +803,9 @@ static MIME_HEADER *mime_hdr_new(char *name, char *value)
+ 	char *tmpname, *tmpval, *p;
+ 	int c;
+ 	if(name) {
+-		if(!(tmpname = BUF_strdup(name))) return NULL;
++		if(!(tmpname = BUF_strdup(name))) {
++			return NULL;
++		}
+ 		for(p = tmpname ; *p; p++) {
+ 			c = (unsigned char)*p;
+ 			if(isupper(c)) {
+@@ -811,9 +813,13 @@ static MIME_HEADER *mime_hdr_new(char *name, char *value)
+ 				*p = c;
+ 			}
+ 		}
+-	} else tmpname = NULL;
++	} else {
++		tmpname = NULL;
++	}
+ 	if(value) {
+-		if(!(tmpval = BUF_strdup(value))) return NULL;
++		if(!(tmpval = BUF_strdup(value))) {
++			return NULL;
++		}
+ 		for(p = tmpval ; *p; p++) {
+ 			c = (unsigned char)*p;
+ 			if(isupper(c)) {
+@@ -821,12 +827,18 @@ static MIME_HEADER *mime_hdr_new(char *name, char *value)
+ 				*p = c;
+ 			}
+ 		}
+-	} else tmpval = NULL;
++	} else {
++		tmpval = NULL;
++	}
+ 	mhdr = (MIME_HEADER *) OPENSSL_malloc(sizeof(MIME_HEADER));
+-	if(!mhdr) return NULL;
++	if(!mhdr) {
++		return NULL;
++	}
+ 	mhdr->name = tmpname;
+ 	mhdr->value = tmpval;
+-	if(!(mhdr->params = sk_MIME_PARAM_new(mime_param_cmp))) return NULL;
++	if(!(mhdr->params = sk_MIME_PARAM_new(mime_param_cmp))) {
++		return NULL;
++	}
+ 	return mhdr;
+ }
+ 		
+diff --git a/crypto/asn1/bio_asn1.c b/crypto/asn1/bio_asn1.c
+index dc7efd5..4181443 100755
+--- a/crypto/asn1/bio_asn1.c
++++ b/crypto/asn1/bio_asn1.c
+@@ -151,10 +151,12 @@ static int asn1_bio_new(BIO *b)
+ 	{
+ 	BIO_ASN1_BUF_CTX *ctx;
+ 	ctx = OPENSSL_malloc(sizeof(BIO_ASN1_BUF_CTX));
+-	if (!ctx)
++	if (!ctx) {
+ 		return 0;
+-	if (!asn1_bio_init(ctx, DEFAULT_ASN1_BUF_SIZE))
++	}
++	if (!asn1_bio_init(ctx, DEFAULT_ASN1_BUF_SIZE)) {
+ 		return 0;
++	}
+ 	b->init = 1;
+ 	b->ptr = (char *)ctx;
+ 	b->flags = 0;
+diff --git a/crypto/dh/dh_check.c b/crypto/dh/dh_check.c
+index 0668981..a895c7a 100755
+--- a/crypto/dh/dh_check.c
++++ b/crypto/dh/dh_check.c
+@@ -126,17 +126,23 @@ int DH_check_pub_key(const DH *dh, const BIGNUM *pub_key, int *ret)
+ 
+ 	*ret=0;
+ 	q=BN_new();
+-	if (q == NULL) goto err;
++	if (q == NULL) {
++		goto err;
++	}
+ 	BN_set_word(q,1);
+-	if (BN_cmp(pub_key,q)<=0)
++	if (BN_cmp(pub_key,q)<=0) {
+ 		*ret|=DH_CHECK_PUBKEY_TOO_SMALL;
++	}
+ 	BN_copy(q,dh->p);
+ 	BN_sub_word(q,1);
+-	if (BN_cmp(pub_key,q)>=0)
++	if (BN_cmp(pub_key,q)>=0) {
+ 		*ret|=DH_CHECK_PUBKEY_TOO_LARGE;
++	}
+ 
+ 	ok = 1;
+ err:
+-	if (q != NULL) BN_free(q);
++	if (q != NULL) {
++		BN_free(q);
++	}
+ 	return(ok);
+ 	}
+diff --git a/crypto/ocsp/ocsp_ht.c b/crypto/ocsp/ocsp_ht.c
+index af5fc16..bf708be 100755
+--- a/crypto/ocsp/ocsp_ht.c
++++ b/crypto/ocsp/ocsp_ht.c
+@@ -162,21 +162,26 @@ OCSP_REQ_CTX *OCSP_sendreq_new(BIO *io, char *path, OCSP_REQUEST *req,
+ 	rctx->mem = BIO_new(BIO_s_mem());
+ 	rctx->io = io;
+ 	rctx->asn1_len = 0;
+-	if (maxline > 0)
++	if (maxline > 0) {
+ 		rctx->iobuflen = maxline;
+-	else
++	} else {
+ 		rctx->iobuflen = OCSP_MAX_LINE_LEN;
++	}
+ 	rctx->iobuf = OPENSSL_malloc(rctx->iobuflen);
+-	if (!rctx->iobuf)
++	if (!rctx->iobuf) {
+ 		return 0;
+-	if (!path)
++	}
++	if (!path) {
+ 		path = "/";
++	}
+ 
+-        if (BIO_printf(rctx->mem, post_hdr, path) <= 0)
++	if (BIO_printf(rctx->mem, post_hdr, path) <= 0) {
+ 		return 0;
++	}
+ 
+-	if (req && !OCSP_REQ_CTX_set1_req(rctx, req))
++	if (req && !OCSP_REQ_CTX_set1_req(rctx, req)) {
+ 		return 0;
++	}
+ 
+ 	return rctx;
+ 	}
+diff --git a/engines/ccgost/gost_pmeth.c b/engines/ccgost/gost_pmeth.c
+index f91c9b1..0373d83 100755
+--- a/engines/ccgost/gost_pmeth.c
++++ b/engines/ccgost/gost_pmeth.c
+@@ -24,7 +24,9 @@ static int pkey_gost_init(EVP_PKEY_CTX *ctx)
+ 	struct gost_pmeth_data *data;
+ 	EVP_PKEY *pkey = EVP_PKEY_CTX_get0_pkey(ctx);
+ 	data = OPENSSL_malloc(sizeof(struct gost_pmeth_data));
+-	if (!data) return 0;
++	if (!data) {
++		return 0;
++	}
+ 	memset(data,0,sizeof(struct gost_pmeth_data));
+ 	if (pkey && EVP_PKEY_get0(pkey)) 
+ 		{
+@@ -625,4 +627,3 @@ int register_pmeth_gost(int id, EVP_PKEY_METHOD **pmeth,int flags)
+ 	
+ 	return 1;
+ 	}
+-

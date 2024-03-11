@@ -1,0 +1,23 @@
+diff --git a/grub-core/disk/scsi.c b/grub-core/disk/scsi.c
+index 92084d0..115e7e2 100644
+--- a/grub-core/disk/scsi.c
++++ b/grub-core/disk/scsi.c
+@@ -763,3 +763,18 @@ GRUB_MOD_FINI(scsi)
+ {
+   grub_disk_dev_unregister (&grub_scsi_dev);
+ }
++
++
++// fake main
++int main() {
++  const char *name = "tmp_one";
++  grub_disk_t disk = (grub_disk_t) grub_malloc (sizeof (*disk));
++  if (!disk) return 1;
++  disk->name = "tmp_two";
++
++  grub_scsi_open(name, disk);
++
++  grub_free(name);
++  grub_free(disk->name);
++  grub_free(disk);
++}

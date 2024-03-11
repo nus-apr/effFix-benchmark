@@ -1,0 +1,15 @@
+diff --git a/trust/asn1.c b/trust/asn1.c
+index 5ce682d..341d01e 100644
+--- a/trust/asn1.c
++++ b/trust/asn1.c
+@@ -353,8 +353,9 @@ p11_asn1_cache_take (p11_asn1_cache *cache,
+ 		return_if_reached ();
+ 	}
+ 
+-	if (!p11_dict_set (cache->items, (void *)der, item))
++	if (!p11_dict_set (cache->items, (void *)der, item)) {
+ 		return_if_reached ();
++	}
+ }
+ 
+ void

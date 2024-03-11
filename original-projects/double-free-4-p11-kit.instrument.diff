@@ -1,0 +1,12 @@
+diff --git a/p11-kit/server.c b/p11-kit/server.c
+index 685089d..bb6e957 100644
+--- a/p11-kit/server.c
++++ b/p11-kit/server.c
+@@ -655,7 +655,6 @@ main (int argc,
+ 		}
+ 
+ 		socket_name = p11_path_build (socket_base, name, NULL);
+-		free (socket_base);
+ 		free (name);
+ 	} else {
+ 		socket_name = strdup (name);

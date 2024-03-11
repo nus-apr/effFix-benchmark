@@ -1,0 +1,22 @@
+diff --git a/src/memory/Table.c b/src/memory/Table.c
+index 95f6fd6..8b579af 100644
+--- a/src/memory/Table.c
++++ b/src/memory/Table.c
+@@ -26,6 +26,7 @@ static int insert_count = 0;
+ static int conflict_max_level = 0;
+ #endif
+ 
++static int __efffix_tmp;
+ static void swTableColumn_free(swTableColumn *col);
+ 
+ static void swTableColumn_free(swTableColumn *col)
+@@ -128,7 +129,8 @@ int swTableColumn_add(swTable *table, char *name, int len, int type, int size)
+     col->index = table->item_size;
+     table->item_size += col->size;
+     table->column_num ++;
+-    return swHashMap_add(table->columns, name, len, col);
++    __efffix_tmp = swHashMap_add(table->columns, name, len, col);
++    return __efffix_tmp;
+ }
+ 
+ int swTable_create(swTable *table)

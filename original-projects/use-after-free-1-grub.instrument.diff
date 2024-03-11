@@ -1,0 +1,15 @@
+diff --git a/grub-core/normal/crypto.c b/grub-core/normal/crypto.c
+index 2bfd67c..81c3166 100644
+--- a/grub-core/normal/crypto.c
++++ b/grub-core/normal/crypto.c
+@@ -161,3 +161,10 @@ read_crypto_list (const char *prefix)
+ 
+   grub_crypto_autoload_hook = grub_crypto_autoload;
+ }
++
++
++// fake main
++int main() {
++  const char *prefix = "tmp";
++  read_crypto_list(prefix);
++}

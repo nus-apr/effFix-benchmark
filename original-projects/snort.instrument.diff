@@ -1,0 +1,195 @@
+diff --git a/src/sfutil/ipobj.c b/src/sfutil/ipobj.c
+index ff11676..3e3547f 100644
+--- a/src/sfutil/ipobj.c
++++ b/src/sfutil/ipobj.c
+@@ -53,7 +53,7 @@
+ #include "util.h"
+ #include "snort_bounds.h"
+ 
+-
++static int __efffix_tmp;
+ 
+ /*
+ 
+@@ -116,19 +116,26 @@ void ipset_free( IPSET * ipc )
+ 
+ int     ipset_add     ( IPSET * ipset, sfcidr_t *ip, void * vport, int notflag)
+ {
+-    if( !ipset ) return -1;
++    if( !ipset ) {
++        return -1;
++    }
+ 
+     {
+         PORTSET  * portset = (PORTSET *) vport;
+         IP_PORT *p = (IP_PORT*)calloc( 1,sizeof(IP_PORT) );
+-        if(!p) return -1;
++        if(!p) {
++            return -1;
++        }
+ 
+         sfip_set_ip(&p->ip, ip);
+         p->portset = *portset;
+         p->notflag = (char)notflag;
+ 
+-        if( notflag )sflist_add_head( &ipset->ip_list, p ); // test NOT items 1st
+-        else         sflist_add_tail( &ipset->ip_list, p );
++        if( notflag ) {
++            __efffix_tmp = sflist_add_head( &ipset->ip_list, p );
++        } else {
++            __efffix_tmp = sflist_add_tail( &ipset->ip_list, p );
++        }
+     }
+ 
+     return 0;
+@@ -219,15 +226,19 @@ static int portset_add(PORTSET * portset, unsigned port_lo, unsigned port_hi)
+ {
+     PORTRANGE *p;
+ 
+-    if( !portset ) return -1;
++    if( !portset ) {
++        return -1;
++    }
+ 
+     p = (PORTRANGE *) calloc( 1,sizeof(PORTRANGE) );
+-    if(!p) return -1;
++    if(!p) {
++        return -1;
++    }
+ 
+     p->port_lo = port_lo;
+     p->port_hi = port_hi;
+ 
+-    sflist_add_tail(&portset->port_list, p );
++    __efffix_tmp = sflist_add_tail(&portset->port_list, p );
+ 
+     return 0;
+ }
+@@ -721,4 +732,3 @@ int main( int argc, char ** argv )
+ }
+ 
+ #endif
+-
+diff --git a/src/sfutil/sfportobject.c b/src/sfutil/sfportobject.c
+index cdb7443..ecff2a9 100644
+--- a/src/sfutil/sfportobject.c
++++ b/src/sfutil/sfportobject.c
+@@ -208,6 +208,8 @@
+ #define PO_INIT_ID 1000000
+ #define PO_HASH_TBL_ROWS 10000
+ 
++static int __efffix_tmp;
++
+ /*
+    Hash Key Comparisons for treating PortObjects as Keys
+ 
+@@ -796,18 +798,21 @@ int PortObjectAddPort( PortObject * po, int port, int not_flag )
+    PortObjectItem * poi;
+ 
+    poi = PortObjectItemNew();
+-   if( !poi )
++   if( !poi ) {
+        return -1;
++   }
+ 
+    poi->type = PORT_OBJECT_PORT;
+ 
+-   if( not_flag )
++   if( not_flag ) {
+        poi->flags = PORT_OBJECT_NOT_FLAG;
++   }
+ 
+    poi->lport = (unsigned short)port;
+    poi->hport = (unsigned short)port;
+ 
+-   return  sflist_add_tail( po->item_list, poi );
++   __efffix_tmp = sflist_add_tail( po->item_list, poi );
++   return __efffix_tmp;
+ }
+ 
+ /*
+@@ -818,18 +823,21 @@ int PortObjectAddRange( PortObject * po, int lport, int hport, int not_flag )
+    PortObjectItem * poi;
+ 
+    poi = PortObjectItemNew();
+-   if( !poi )
++   if( !poi ) {
+        return -1;
++   }
+ 
+    poi->type = PORT_OBJECT_RANGE;
+ 
+-   if( not_flag )
++   if( not_flag ) {
+        poi->flags = PORT_OBJECT_NOT_FLAG;
++   }
+ 
+    poi->lport = (unsigned short)lport;
+    poi->hport = (unsigned short)hport;
+ 
+-   return  sflist_add_tail( po->item_list, poi );
++   __efffix_tmp = sflist_add_tail( po->item_list, poi );
++   return __efffix_tmp;
+ }
+ /*
+    Add ANY port
+@@ -1470,12 +1478,13 @@ PortObject * PortObjectAppend(PortObject * poa, PortObject * pob )
+    {
+        poia = PortObjectItemNew();
+ 
+-       if(!poia)
++       if(!poia) {
+            return 0;
++       }
+ 
+        memcpy(poia,poib,sizeof(PortObjectItem));
+ 
+-       sflist_add_tail(poa->item_list,poia);
++       __efffix_tmp = sflist_add_tail(poa->item_list,poia);
+    }
+    return poa;
+ }
+@@ -1491,10 +1500,11 @@ PortObject * PortObjectAppendPortObject(PortObject * poa, PortObject * pob )
+         prid = (int*)sflist_nextpos(pob->rule_list,&lpos) )
+    {
+        prid2 = calloc( 1, sizeof(int));
+-       if( !prid2 )
++       if( !prid2 ) {
+            return 0;
++       }
+        *prid2 = *prid;
+-       sflist_add_tail(poa->rule_list,prid2);
++       __efffix_tmp = sflist_add_tail(poa->rule_list,prid2);
+    }
+    return poa;
+ }
+@@ -1727,11 +1737,13 @@ int PortObjectAddRule( PortObject * po , int rule )
+     int * pruleid;
+ 
+     //LogMessage("Adding Rule %d to Port Object '%s'\n",rule,po->name);
+-    if( !po )
++    if( !po ) {
+         return -1;
++    }
+ 
+-    if( !po->rule_list )
++    if( !po->rule_list ) {
+         return -1;
++    }
+ 
+     /* Add rule index to rule list */
+     pruleid = calloc(1,sizeof(int));
+@@ -1742,7 +1754,7 @@ int PortObjectAddRule( PortObject * po , int rule )
+ 
+     *pruleid = rule;
+ 
+-    sflist_add_tail( po->rule_list, pruleid );
++    __efffix_tmp = sflist_add_tail( po->rule_list, pruleid );
+ 
+     return 0;
+ }
+@@ -4038,4 +4050,3 @@ int main( int argc, char ** argv )
+      return 0;
+ }
+ #endif
+-

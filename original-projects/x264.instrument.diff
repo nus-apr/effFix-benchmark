@@ -1,0 +1,171 @@
+diff --git a/filters/video/cache.c b/filters/video/cache.c
+index eaad0bd..25d1850 100644
+--- a/filters/video/cache.c
++++ b/filters/video/cache.c
+@@ -54,22 +54,26 @@ static int init( hnd_t *handle, cli_vid_filter_t *filter, video_info_t *info, x2
+ {
+     intptr_t size = (intptr_t)opt_string;
+     /* upon a <= 0 cache request, do nothing */
+-    if( size <= 0 )
++    if( size <= 0 ) {
+         return 0;
++    }
+     cache_hnd_t *h = calloc( 1, sizeof(cache_hnd_t) );
+-    if( !h )
++    if( !h ) {
+         return -1;
++    }
+ 
+     h->max_size = size;
+     h->cache = malloc( (h->max_size+1) * sizeof(cli_pic_t*) );
+-    if( !h->cache )
++    if( !h->cache ) {
+         return -1;
++    }
+ 
+     for( int i = 0; i < h->max_size; i++ )
+     {
+         h->cache[i] = malloc( sizeof(cli_pic_t) );
+-        if( !h->cache[i] || x264_cli_pic_alloc( h->cache[i], info->csp, info->width, info->height ) )
++        if( !h->cache[i] || x264_cli_pic_alloc( h->cache[i], info->csp, info->width, info->height ) ) {
+             return -1;
++        }
+     }
+     h->cache[h->max_size] = NULL; /* require null terminator for list methods */
+ 
+diff --git a/filters/video/source.c b/filters/video/source.c
+index f291b01..991ca6a 100644
+--- a/filters/video/source.c
++++ b/filters/video/source.c
+@@ -40,12 +40,14 @@ cli_vid_filter_t source_filter;
+ static int init( hnd_t *handle, cli_vid_filter_t *filter, video_info_t *info, x264_param_t *param, char *opt_string )
+ {
+     source_hnd_t *h = calloc( 1, sizeof(source_hnd_t) );
+-    if( !h )
++    if( !h ) {
+         return -1;
++    }
+     h->cur_frame = -1;
+ 
+-    if( cli_input.picture_alloc( &h->pic, *handle, info->csp, info->width, info->height ) )
++    if( cli_input.picture_alloc( &h->pic, *handle, info->csp, info->width, info->height ) ) {
+         return -1;
++    }
+ 
+     h->hin = *handle;
+     *handle = h;
+diff --git a/input/avs.c b/input/avs.c
+index c9917d3..f4f0637 100644
+--- a/input/avs.c
++++ b/input/avs.c
+@@ -78,6 +78,7 @@
+         goto fail;\
+ }
+ 
++static int __efffix_tmp;
+ typedef struct
+ {
+     AVS_Clip *clip;
+@@ -256,16 +257,19 @@ static float get_avs_version( avs_hnd_t *h )
+ static int open_file( char *psz_filename, hnd_t *p_handle, video_info_t *info, cli_input_opt_t *opt )
+ {
+     FILE *fh = x264_fopen( psz_filename, "r" );
+-    if( !fh )
++    if( !fh ) {
+         return -1;
++    }
+     int b_regular = x264_is_regular_file( fh );
+     fclose( fh );
+     FAIL_IF_ERROR( !b_regular, "AVS input is incompatible with non-regular file `%s'\n", psz_filename );
+ 
+     avs_hnd_t *h = calloc( 1, sizeof(avs_hnd_t) );
+-    if( !h )
++    if( !h ) {
+         return -1;
+-    FAIL_IF_ERROR( custom_avs_load_library( h ), "failed to load avisynth\n" );
++    }
++    __efffix_tmp = custom_avs_load_library( h );
++    FAIL_IF_ERROR( __efffix_tmp, "failed to load avisynth\n" );
+     h->env = h->func.avs_create_script_environment( AVS_INTERFACE_25 );
+     if( h->func.avs_get_error )
+     {
+@@ -273,8 +277,9 @@ static int open_file( char *psz_filename, hnd_t *p_handle, video_info_t *info, c
+         FAIL_IF_ERROR( error, "%s\n", error );
+     }
+     float avs_version = get_avs_version( h );
+-    if( avs_version <= 0 )
++    if( avs_version <= 0 ) {
+         return -1;
++    }
+     x264_cli_log( "avs", X264_LOG_DEBUG, "using avisynth version %.2f\n", avs_version );
+ 
+ #ifdef _WIN32
+diff --git a/input/thread.c b/input/thread.c
+index eb46365..3960265 100644
+--- a/input/thread.c
++++ b/input/thread.c
+@@ -29,6 +29,7 @@
+ 
+ #define thread_input x264_glue3(thread, BIT_DEPTH, input)
+ 
++static int __efffix_tmp;
+ typedef struct
+ {
+     cli_input_t input;
+@@ -51,20 +52,23 @@ typedef struct thread_input_arg_t
+ static int open_file( char *psz_filename, hnd_t *p_handle, video_info_t *info, cli_input_opt_t *opt )
+ {
+     thread_hnd_t *h = malloc( sizeof(thread_hnd_t) );
+-    FAIL_IF_ERR( !h || cli_input.picture_alloc( &h->pic, *p_handle, info->csp, info->width, info->height ),
++    __efffix_tmp = cli_input.picture_alloc( &h->pic, *p_handle, info->csp, info->width, info->height );
++    FAIL_IF_ERR( !h || __efffix_tmp,
+                  "x264", "malloc failed\n" );
+     h->input = cli_input;
+     h->p_handle = *p_handle;
+     h->next_frame = -1;
+     h->next_args = malloc( sizeof(thread_input_arg_t) );
+-    if( !h->next_args )
++    if( !h->next_args ) {
+         return -1;
++    }
+     h->next_args->h = h;
+     h->next_args->status = 0;
+     h->frame_total = info->num_frames;
+ 
+-    if( x264_threadpool_init( &h->pool, 1, NULL, NULL ) )
++    if( x264_threadpool_init( &h->pool, 1, NULL, NULL ) ) {
+         return -1;
++    }
+ 
+     *p_handle = h;
+     return 0;
+diff --git a/input/timecode.c b/input/timecode.c
+index db4910d..182dff6 100644
+--- a/input/timecode.c
++++ b/input/timecode.c
+@@ -362,10 +362,12 @@ static int open_file( char *psz_filename, hnd_t *p_handle, video_info_t *info, c
+     }
+     h->auto_timebase_num = !ret;
+     h->auto_timebase_den = ret < 2;
+-    if( h->auto_timebase_num )
++    if( h->auto_timebase_num ) {
+         h->timebase_num = info->fps_den; /* can be changed later by auto timebase generation */
+-    if( h->auto_timebase_den )
++    }
++    if( h->auto_timebase_den ) {
+         h->timebase_den = 0;             /* set later by auto timebase generation */
++    }
+ 
+     tcfile_in = x264_fopen( psz_filename, "rb" );
+     FAIL_IF_ERROR( !tcfile_in, "can't open `%s'\n", psz_filename );
+@@ -378,8 +380,9 @@ static int open_file( char *psz_filename, hnd_t *p_handle, video_info_t *info, c
+ 
+     if( parse_tcfile( tcfile_in, h, info ) < 0 )
+     {
+-        if( h->pts )
++        if( h->pts ) {
+             free( h->pts );
++        }
+         fclose( tcfile_in );
+         return -1;
+     }
