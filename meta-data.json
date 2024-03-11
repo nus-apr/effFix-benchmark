@@ -758,7 +758,6 @@
       "-C tools/lib/subcmd help.o"
     ]
   },
-
   {
     "id": 34,
     "subject": "grub",
@@ -766,9 +765,300 @@
     "bug_type": "Double Free",
     "old_bug_id_in_saver": "grub-df-1",
     "source": {
+      "src-file": "grub-core/script/lexer.c",
+      "procedure": "grub_script_lexer_init",
+      "line": 253
     },
     "sink": {
-
-    }
+      "src-file": "grub-core/script/lexer.c",
+      "procedure": "grub_script_lexer_init",
+      "line": 254
+    },
+    "config_script": "config.sh",
+    "config_command": "./autogen.sh && ./configure",
+    "build_command": "make -j`nproc` libgrubmods.a",
+    "has_instrumentation": false
+  },
+  {
+    "id": 35,
+    "subject": "grub",
+    "bug_id": "double-free-2-grub",
+    "bug_type": "Double Free",
+    "old_bug_id_in_saver": "grub-df-3",
+    "source": {
+      "src-file": "grub-core/io/lzopio.c",
+      "procedure": "test_header",
+      "line": 370
+    },
+    "sink": {
+      "src-file": "grub-core/io/lzopio.c",
+      "procedure": "test_header",
+      "line": 406
+    },
+    "config_script": "config.sh",
+    "config_command": "./autogen.sh && ./configure",
+    "build_command": "make -j`nproc` libgrubmods.a",
+    "has_instrumentation": false
+  },
+  {
+    "id": 36,
+    "subject": "p11-kit",
+    "bug_id": "double-free-3-p11-kit",
+    "bug_type": "Double Free",
+    "old_bug_id_in_saver": "p11-kit-df-1",
+    "source": {
+      "src-file": "trust/extract.c",
+      "procedure": "p11_trust_extract_compat",
+      "line": 305
+    },
+    "sink": {
+      "src-file": "trust/extract.c",
+      "procedure": "p11_trust_extract_compat",
+      "line": 318
+    },
+    "config_script": "config.sh",
+    "config_command": "./autogen.sh",
+    "build_command": "make -j`nproc`",
+    "has_intrumentation": true
+  },
+  {
+    "id": 37,
+    "subject": "p11-kit",
+    "bug_id": "double-free-4-p11-kit",
+    "bug_type": "Double Free",
+    "old_bug_id_in_saver": "p11-kit-df-2",
+    "source": {
+      "src-file": "p11-kit/server.c",
+      "procedure": "main",
+      "line": 664
+    },
+    "sink": {
+      "src-file": "p11-kit/server.c",
+      "procedure": "main",
+      "line": 678
+    },
+    "config_script": "config.sh",
+    "config_command": "./autogen.sh",
+    "build_command": "make p11-kit-server -j`nproc`",
+    "has_intrumentation": true
+  },
+  {
+    "id": 38,
+    "subject": "grub",
+    "bug_id": "use-after-free-1-grub",
+    "bug_type": "Use After Free",
+    "old_bug_id_in_saver": "grub-uaf-1",
+    "source": {
+      "src-file": "normal/crypto.c",
+      "procedure": "read_crypto_list",
+      "line": 150
+    },
+    "sink": {
+      "src-file": "normal/crypto.c",
+      "procedure": "read_crypto_list",
+      "line": 151
+    },
+    "config_script": "config.sh",
+    "config_command": "./autogen.sh && CC=gcc CFLAGS='-Wno-error' ./configure && make grub_script.tab.h && make grub_script.yy.h && cd grub-core && make clean && cd ..",
+    "build_dir": "grub-core",
+    "build_command": "make -j`nproc` normal.module",
+    "has_instrumentation": true
+  },
+  {
+    "id": 39,
+    "subject": "grub",
+    "bug_id": "use-after-free-2-grub",
+    "bug_type": "Use After Free",
+    "old_bug_id_in_saver": "grub-uaf-3",
+    "source": {
+      "src-file": "bus/usb/usbtrans.c",
+      "procedure": "grub_usb_bulk_finish_readwrite",
+      "line": 314
+    },
+    "sink": {
+      "src-file": "bus/usb/usbtrans.c",
+      "procedure": "grub_usb_bulk_finish_readwrite",
+      "line": 315
+    },
+    "config_script": "config.sh",
+    "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure",
+    "build_dir": "grub-core",
+    "build_command": "make -j`nproc` usb.module",
+    "has_instrumentation": true
+  },
+  {
+    "id": 40,
+    "subject": "grub",
+    "bug_id": "use-after-free-3-grub",
+    "bug_type": "Use After Free",
+    "old_bug_id_in_saver": "grub-uaf-4",
+    "source": {
+      "src-file": "loader/i386/xnu.c",
+      "procedure": "grub_xnu_devprop_add_property",
+      "line": 272
+    },
+    "sink": {
+      "src-file": "loader/i386/xnu.c",
+      "procedure": "grub_xnu_devprop_add_property",
+      "line": 274
+    },
+    "config_script": "config.sh",
+    "config_command": "./autogen.sh && ./configure",
+    "build_dir": "grub-core",
+    "build_command": "make -j`nproc` xnu.module",
+    "has_instrumentation": false
+  },
+  {
+    "id": 41,
+    "subject": "grub",
+    "bug_id": "use-after-free-4-grub",
+    "bug_type": "Use After Free",
+    "old_bug_id_in_saver": "grub-uaf-5",
+    "source": {
+      "src-file": "disk/scsi.c",
+      "procedure": "grub_scsi_open",
+      "line": 618
+    },
+    "sink": {
+      "src-file": "disk/scsi.c",
+      "procedure": "grub_scsi_open",
+      "line": 619
+    },
+    "config_script": "config.sh",
+    "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure",
+    "build_dir": "grub-core",
+    "build_command": "make -j`nproc` scsi.module",
+    "has_instrumentation": true
+  },
+  {
+    "id": 42,
+    "subject": "grub",
+    "bug_id": "use-after-free-5-grub",
+    "bug_type": "Use After Free",
+    "old_bug_id_in_saver": "grub-uaf-6",
+    "source": {
+      "src-file": "commands/search.c",
+      "procedure": "try",
+      "line": 215
+    },
+    "sink": {
+      "src-file": "commands/search.c",
+      "procedure": "try",
+      "line": 216
+    },
+    "config_script": "config.sh",
+    "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure",
+    "build_dir": "grub-core",
+    "build_command": "make -j`nproc` search_label.module",
+    "has_instrumentation": true
+  },
+  {
+    "id": 43,
+    "subject": "grub",
+    "bug_id": "use-after-free-6-grub",
+    "bug_type": "Use After Free",
+    "old_bug_id_in_saver": "grub-uaf-7",
+    "source": {
+      "src-file": "disk/luks.c",
+      "procedure": "configure_ciphers",
+      "line": 203
+    },
+    "sink": {
+      "src-file": "disk/luks.c",
+      "procedure": "configure_ciphers",
+      "line": 204
+    },
+    "config_script": "config.sh",
+    "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure",
+    "build_dir": "grub-core",
+    "build_command": "make -j`nproc` luks.module",
+    "has_instrumentation": true
+  },
+  {
+    "id": 44,
+    "subject": "grub",
+    "bug_id": "use-after-free-7-grub",
+    "bug_type": "Use After Free",
+    "old_bug_id_in_saver": "grub-uaf-9",
+    "source": {
+      "src-file": "gettext/gettext.c",
+      "procedure": "grub_mofile_open_lang",
+      "line": 358
+    },
+    "sink": {
+      "src-file": "gettext/gettext.c",
+      "procedure": "grub_mofile_open_lang",
+      "line": 364
+    },
+    "config_script": "config.sh",
+    "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure",
+    "build_dir": "grub-core",
+    "build_command": "make -j`nproc` kernel.exec gettext.module",
+    "has_instrumentation": false
+  },
+  {
+    "id": 45,
+    "subject": "lxc",
+    "bug_id": "use-after-free-8-lxc",
+    "bug_type": "Use After Free",
+    "old_bug_id_in_saver": "lxc-uaf-1",
+    "source": {
+      "src-file": "tools/lxc_execute.c",
+      "procedure": "main",
+      "line": 242
+    },
+    "sink": {
+      "src-file": "tools/lxc_execute.c",
+      "procedure": "main",
+      "line": 250
+    },
+    "config_script": "config.sh",
+    "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure",
+    "build_dir": "src/lxc",
+    "build_command": "make -j`nproc` lxc-execute",
+    "has_instrumentation": false
+  },
+  {
+    "id": 46,
+    "subject": "lxc",
+    "bug_id": "use-after-free-9-lxc",
+    "bug_type": "Use After Free",
+    "old_bug_id_in_saver": "lxc-uaf-2",
+    "source": {
+      "src-file": "lxccontainer.c",
+      "procedure": "prepend_lxc_header",
+      "line": 1637
+    },
+    "sink": {
+      "src-file": "lxccontainer.c",
+      "procedure": "prepend_lxc_header",
+      "line": 1639
+    },
+    "config_script": "config.sh",
+    "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure --enable-gnutls",
+    "build_dir": "src/lxc",
+    "build_command": "make -j`nproc`",
+    "has_instrumentation": false
+  },
+  {
+    "id": 47,
+    "subject": "p11-kit",
+    "bug_id": "use-after-free-10-p11-kit",
+    "bug_type": "Use After Free",
+    "old_bug_id_in_saver": "p11-kit-uaf-1",
+    "source": {
+      "src-file": "p11-kit/server.c",
+      "procedure": "main",
+      "line": 658
+    },
+    "sink": {
+      "src-file": "p11-kit/server.c",
+      "procedure": "main",
+      "line": 680
+    },
+    "config_script": "config.sh",
+    "config_command": "./autogen.sh",
+    "build_command": "make -j`nproc` p11-kit-server",
+    "has_instrumentation": false
   }
 ]
