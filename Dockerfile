@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
-LABEL maintainer="Ridwan Shariffdeen <rshariffdeen@gmail.com>"
-COPY --from=yuntongzhang/efffix:experiments /data /data
+LABEL org.opencontainers.image.authors="Ridwan Shariffdeen <rshariffdeen@gmail.com>, Yuntong Zhang <ang.unong@gmail.com>"
+# COPY --from=yuntongzhang/efffix:experiments /data /data
 RUN apt-get update && apt-get upgrade -y && apt-get autoremove -y
 
 # install some basic software
@@ -40,12 +40,5 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends
     openssl \
     php \
     php7.4-dev \
-    zlib1g-dev
-
-
-
-
-
-
-
-
+    zlib1g-dev \
+    libgnutls28-dev

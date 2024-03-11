@@ -8,4 +8,3 @@ cd $dir_name/src
 
 ./autogen.sh
 ./configure --disable-dependency-tracking
-

@@ -7,4 +7,3 @@ dir_name=/experiment/$benchmark_name/$project_name/$bug_id
 cd $dir_name/src
 
 make -j`nproc` drivers/gpu/drm/drm_framebuffer.o
-

@@ -9,5 +9,3 @@ cd $dir_name/src
 make -j`nproc` build_apps
 ret=$?
 exit $ret
-
-

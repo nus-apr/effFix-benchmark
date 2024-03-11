@@ -9,7 +9,7 @@ mkdir -p $dir_name
 cd $dir_name
 mkdir dev-patch
 
-download_link=https://raw.githubusercontent.com/nus-apr/efffix-benchmark/main/archives/$project_name.tar.gz
+download_link=https://raw.githubusercontent.com/nus-apr/efffix-benchmark/main/source/$project_name-instrumented.tar.gz
 mkdir tmp
 wget $download_link
 tar -xzf $project_name.tar.gz -C tmp
@@ -20,5 +20,3 @@ if [ -d "/data/$project_name/pre" ]
 then
     cp -rf /data/$project_name/pre $dir_name
 fi
-
-

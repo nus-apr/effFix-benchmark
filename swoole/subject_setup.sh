@@ -7,7 +7,7 @@ current_dir=$PWD
 mkdir -p $dir_name
 cd $dir_name
 
-download_link=https://raw.githubusercontent.com/nus-apr/efffix-benchmark/main/archives/$project_name.tar.gz
+download_link=https://raw.githubusercontent.com/nus-apr/efffix-benchmark/main/source/$project_name-instrumented.tar.gz
 
 mkdir tmp
 wget $download_link
