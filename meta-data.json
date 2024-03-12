@@ -18,8 +18,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "phpize && ./configure",
-    "build_command": "make -j32",
-    "compile_programs": []
+    "build_command_project": "make -j32",
+    "build_command_repair": "make -j32"
   },
   {
     "id": 2,
@@ -41,8 +41,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "phpize && ./configure",
-    "build_command": "make -j32",
-    "compile_programs": []
+    "build_command_project": "make -j32",
+    "build_command_repair": "make -j32"
   },
   {
     "id": 3,
@@ -64,8 +64,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "phpize && ./configure",
-    "build_command": "make -j32",
-    "compile_programs": []
+    "build_command_project": "make -j32",
+    "build_command_repair": "make -j32"
   },
   {
     "id": 4,
@@ -85,8 +85,8 @@
     "build_dir": "",
     "config_script": "config.sh",
     "config_command": "./autogen.sh && ./configure",
-    "build_command": "make CFLAGS='-fcommon' -j32",
-    "compile_programs": []
+    "build_command_project": "make CFLAGS='-fcommon' -j32",
+    "build_command_repair": "make CFLAGS='-fcommon' -j32"
   },
   {
     "id": 5,
@@ -107,8 +107,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "./configure",
-    "build_command": "make -j32",
-    "compile_programs": []
+    "build_command_project": "make -j32",
+    "build_command_repair": "make -j32"
   },
   {
     "id": 6,
@@ -130,8 +130,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "./configure",
-    "build_command": "make -j32",
-    "compile_programs": []
+    "build_command_project": "make -j32",
+    "build_command_repair": "make -j32"
   },
   {
     "id": 7,
@@ -152,8 +152,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "./configure",
-    "build_command": "make -j32",
-    "compile_programs": []
+    "build_command_project": "make -j32",
+    "build_command_repair": "make -j32"
   },
   {
     "id": 8,
@@ -174,8 +174,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "./configure",
-    "build_command": "make -j32",
-    "compile_programs": []
+    "build_command_project": "make -j32",
+    "build_command_repair": "make -j32"
   },
   {
     "id": 9,
@@ -197,8 +197,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "./configure",
-    "build_command": "make -j32",
-    "compile_programs": []
+    "build_command_project": "make -j32",
+    "build_command_repair": "make -j32"
   },
   {
     "id": 10,
@@ -219,8 +219,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "./configure",
-    "build_command": "make -j32",
-    "compile_programs": []
+    "build_command_project": "make -j32",
+    "build_command_repair": "make -j32"
   },
   {
     "id": 11,
@@ -241,8 +241,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "autoreconf && ./configure",
-    "build_command": "make CFLAGS='-fcommon' -j32",
-    "compile_programs": []
+    "build_command_project": "make CFLAGS='-fcommon' -j32",
+    "build_command_repair": "make CFLAGS='-fcommon' -j32"
   },
   {
     "id": 12,
@@ -263,8 +263,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "autoreconf && ./configure",
-    "build_command": "make CFLAGS='-fcommon' -j32",
-    "compile_programs": []
+    "build_command_project": "make CFLAGS='-fcommon' -j32",
+    "build_command_repair": "make CFLAGS='-fcommon' -j32"
   },
   {
     "id": 13,
@@ -285,8 +285,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "autoreconf && ./configure",
-    "build_command": "make CFLAGS='-fcommon' -j32",
-    "compile_programs": []
+    "build_command_project": "make CFLAGS='-fcommon' -j32",
+    "build_command_repair": "make CFLAGS='-fcommon' -j32"
   },
   {
     "id": 14,
@@ -307,8 +307,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "autoreconf && ./configure",
-    "build_command": "make CFLAGS='-fcommon' -j32",
-    "compile_programs": []
+    "build_command_project": "make CFLAGS='-fcommon' -j32",
+    "build_command_repair": "make CFLAGS='-fcommon' -j32"
   },
   {
     "id": 15,
@@ -329,8 +329,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "autoreconf && ./configure",
-    "build_command": "make CFLAGS='-fcommon' -j32",
-    "compile_programs": []
+    "build_command_project": "make CFLAGS='-fcommon' -j32",
+    "build_command_repair": "make CFLAGS='-fcommon' -j32"
   },
   {
     "id": 16,
@@ -351,8 +351,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "autoreconf && ./configure",
-    "build_command": "make CFLAGS='-fcommon' -j32",
-    "compile_programs": []
+    "build_command_project": "make CFLAGS='-fcommon' -j32",
+    "build_command_repair": "make CFLAGS='-fcommon' -j32"
   },
   {
     "id": 17,
@@ -372,9 +372,9 @@
     "build_dir": "",
     "config_script": "config.sh",
     "build_script": "build.sh",
-    "build_command": "make CFLAGS='-fcommon' -j32",
     "config_command": "autoreconf && ./configure",
-    "compile_programs": []
+    "build_command_project": "make CFLAGS='-fcommon' -j32",
+    "build_command_repair": "make CFLAGS='-fcommon' -j32"
   },
   {
     "id": 18,
@@ -395,8 +395,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "autoreconf && ./configure",
-    "build_command": "make CFLAGS='-fcommon' -j32",
-    "compile_programs": []
+    "build_command_project": "make CFLAGS='-fcommon' -j32",
+    "build_command_repair": "make CFLAGS='-fcommon' -j32"
   },
   {
     "id": 19,
@@ -417,10 +417,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
-    "build_command": "make",
-    "compile_programs": [
-      "build_crypto"
-    ]
+    "build_command_project": "make",
+    "build_command_repair": "make build_crypto"
   },
   {
     "id": 20,
@@ -441,10 +439,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
-    "build_command": "make",
-    "compile_programs": [
-      "build_crypto"
-    ]
+    "build_command_project": "make",
+    "build_command_repair": "make build_crypto"
   },
   {
     "id": 21,
@@ -465,10 +461,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
-    "build_command": "make",
-    "compile_programs": [
-      "build_crypto"
-    ]
+    "build_command_project": "make",
+    "build_command_repair": "make build_crypto"
   },
   {
     "id": 22,
@@ -489,10 +483,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
-    "build_command": "make",
-    "compile_programs": [
-      "build_engines"
-    ]
+    "build_command_project": "make",
+    "build_command_repair": "make build_engines"
   },
   {
     "id": 23,
@@ -513,10 +505,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "make defconfig",
-    "build_command": "make -j`nproc` drivers/gpu/drm/drm_framebuffer.o",
-    "compile_programs": [
-      "-C tools/objtool elf.o"
-    ]
+    "build_command_project": "make -j32 drivers/gpu/drm/drm_framebuffer.o",
+    "build_command_repair": "make -j32 -C tools/objtool elf.o"
   },
   {
     "id": 24,
@@ -537,10 +527,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "make defconfig",
-    "build_command": "make -j`nproc` drivers/gpu/drm/drm_framebuffer.o",
-    "compile_programs": [
-      "-C tools/objtool orc_gen.o"
-    ]
+    "build_command_project": "make -j32 drivers/gpu/drm/drm_framebuffer.o",
+    "build_command_repair": "make -j32 -C tools/objtool orc_gen.o"
   },
   {
     "id": 25,
@@ -561,10 +549,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
-    "build_command": "make",
-    "compile_programs": [
-      "build_crypto"
-    ]
+    "build_command_project": "make",
+    "build_command_repair": "make build_crypto"
   },
   {
     "id": 26,
@@ -585,10 +571,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
-    "build_command": "make",
-    "compile_programs": [
-      "build_crypto"
-    ]
+    "build_command_project": "make",
+    "build_command_repair": "make build_crypto"
   },
   {
     "id": 27,
@@ -609,10 +593,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
-    "build_command": "make",
-    "compile_programs": [
-      "build_crypto"
-    ]
+    "build_command_project": "make",
+    "build_command_repair": "make build_crypto"
   },
   {
     "id": 28,
@@ -633,10 +615,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
-    "build_command": "make",
-    "compile_programs": [
-      "build_crypto"
-    ]
+    "build_command_project": "make",
+    "build_command_repair": "make build_crypto"
   },
   {
     "id": 29,
@@ -657,10 +637,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
-    "build_command": "make",
-    "compile_programs": [
-      "build_ssl"
-    ]
+    "build_command_project": "make",
+    "build_command_repair": "make build_ssl"
   },
   {
     "id": 30,
@@ -681,10 +659,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
-    "build_command": "make -j32",
-    "compile_programs": [
-      "build_apps"
-    ]
+    "build_command_project": "make -j32",
+    "build_command_repair": "make -j32 build_apps"
   },
   {
     "id": 31,
@@ -705,10 +681,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
-    "build_command": "make -j32",
-    "compile_programs": [
-      "build_apps"
-    ]
+    "build_command_project": "make -j32",
+    "build_command_repair": "make -j32 build_apps"
   },
   {
     "id": 32,
@@ -729,10 +703,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
-    "build_command": "make -j32",
-    "compile_programs": [
-      "build_tests"
-    ]
+    "build_command_project": "make -j32",
+    "build_command_repair": "make -j32 build_tests"
   },
   {
     "id": 33,
@@ -753,10 +725,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "make defconfig",
-    "build_command": "make -j`nproc` drivers/gpu/drm/drm_framebuffer.o",
-    "compile_programs": [
-      "-C tools/lib/subcmd help.o"
-    ]
+    "build_command_project": "make -j32 drivers/gpu/drm/drm_framebuffer.o",
+    "build_command_repair":"make -j32 -C tools/lib/subcmd help.o"
   },
   {
     "id": 34,
@@ -776,7 +746,8 @@
     },
     "config_script": "config.sh",
     "config_command": "./autogen.sh && ./configure",
-    "build_command": "make -j`nproc` libgrubmods.a"
+    "build_command_project": "make -j32 libgrubmods.a",
+    "build_command_repair": "make -j32 libgrubmods.a"
   },
   {
     "id": 35,
@@ -796,7 +767,8 @@
     },
     "config_script": "config.sh",
     "config_command": "./autogen.sh && ./configure",
-    "build_command": "make -j`nproc` libgrubmods.a"
+    "build_command_project": "make -j32 libgrubmods.a",
+    "build_command_repair": "make -j32 libgrubmods.a"
   },
   {
     "id": 36,
@@ -816,7 +788,8 @@
     },
     "config_script": "config.sh",
     "config_command": "./autogen.sh",
-    "build_command": "make -j`nproc`"
+    "build_command_project": "make -j32",
+    "build_command_repair": "make -j32"
   },
   {
     "id": 37,
@@ -836,7 +809,8 @@
     },
     "config_script": "config.sh",
     "config_command": "./autogen.sh",
-    "build_command": "make p11-kit-server -j`nproc`"
+    "build_command_project": "make p11-kit-server -j32",
+    "build_command_repair": "make p11-kit-server -j32"
   },
   {
     "id": 38,
@@ -857,7 +831,8 @@
     "config_script": "config.sh",
     "config_command": "./autogen.sh && CC=gcc CFLAGS='-Wno-error' ./configure && make grub_script.tab.h && make grub_script.yy.h && cd grub-core && make clean && cd ..",
     "build_dir": "grub-core",
-    "build_command": "make -j`nproc` normal.module"
+    "build_command_project": "make -j32 normal.module",
+    "build_command_repair": "make -j32 normal.module"
   },
   {
     "id": 39,
@@ -878,7 +853,8 @@
     "config_script": "config.sh",
     "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure",
     "build_dir": "grub-core",
-    "build_command": "make -j`nproc` usb.module"
+    "build_command_project": "make -j32 usb.module",
+    "build_command_repair": "make -j32 usb.module"
   },
   {
     "id": 40,
@@ -899,7 +875,8 @@
     "config_script": "config.sh",
     "config_command": "./autogen.sh && ./configure",
     "build_dir": "grub-core",
-    "build_command": "make -j`nproc` xnu.module"
+    "build_command_project": "make -j32 xnu.module",
+    "build_command_repair": "make -j32 xnu.module"
   },
   {
     "id": 41,
@@ -920,7 +897,8 @@
     "config_script": "config.sh",
     "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure",
     "build_dir": "grub-core",
-    "build_command": "make -j`nproc` scsi.module"
+    "build_command_project": "make -j32 scsi.module",
+    "build_command_repair": "make -j32 scsi.module"
   },
   {
     "id": 42,
@@ -941,7 +919,8 @@
     "config_script": "config.sh",
     "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure",
     "build_dir": "grub-core",
-    "build_command": "make -j`nproc` search_label.module"
+    "build_command_project": "make -j32 search_label.module",
+    "build_command_repair": "make -j32 search_label.module"
   },
   {
     "id": 43,
@@ -962,7 +941,8 @@
     "config_script": "config.sh",
     "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure",
     "build_dir": "grub-core",
-    "build_command": "make -j`nproc` luks.module"
+    "build_command_project": "make -j32 luks.module",
+    "build_command_repair": "make -j32 luks.module"
   },
   {
     "id": 44,
@@ -983,7 +963,8 @@
     "config_script": "config.sh",
     "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure",
     "build_dir": "grub-core",
-    "build_command": "make -j`nproc` kernel.exec gettext.module"
+    "build_command_project": "make -j32 kernel.exec gettext.module",
+    "build_command_repair": "make -j32 kernel.exec gettext.module"
   },
   {
     "id": 45,
@@ -1004,7 +985,8 @@
     "config_script": "config.sh",
     "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure",
     "build_dir": "src/lxc",
-    "build_command": "make -j`nproc` lxc-execute"
+    "build_command_project": "make -j32 lxc-execute",
+    "build_command_repair": "make -j32 lxc-execute"
   },
   {
     "id": 46,
@@ -1025,7 +1007,8 @@
     "config_script": "config.sh",
     "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure --enable-gnutls",
     "build_dir": "src/lxc",
-    "build_command": "make -j`nproc`"
+    "build_command_project": "make -j32",
+    "build_command_repair": "make -j32"
   },
   {
     "id": 47,
@@ -1045,6 +1028,7 @@
     },
     "config_script": "config.sh",
     "config_command": "./autogen.sh",
-    "build_command": "make -j`nproc` p11-kit-server"
+    "build_command_project": "make -j32 p11-kit-server",
+    "build_command_repair": "make -j32 p11-kit-server"
   }
 ]

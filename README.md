@@ -33,3 +33,10 @@ C Programs with memory-errors detected by Infer (Pulse)
 
 
 - old_bug_id_in_saver: only for UAF/DF bugs. Maps to the original bug id in the SAVER benchmark.
+
+
+## Updated meta-data key definition
+
+- build_command_project: Overall build command used for building the project. Mainly used in EffFix pre stage for whole program analysis
+- build_command_repair: Build command for the specific module/object that is relevant for the repair. Currently used by all tools.
+    For smaller projects, this can be the same as build_command_project.
