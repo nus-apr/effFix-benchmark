@@ -6,6 +6,6 @@ bug_id=$(echo $script_dir | rev | cut -d "/" -f 1 | rev)
 dir_name=/experiment/$benchmark_name/$project_name/$bug_id
 cd $dir_name/src
 
-make -j`nproc` build_tests
+make -j32
 ret=$?
 exit $ret

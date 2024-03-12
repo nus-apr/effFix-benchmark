@@ -7,16 +7,11 @@ dir_name=/experiment/$benchmark_name/$project_name/$bug_id
 current_dir=$PWD
 mkdir -p $dir_name
 cd $dir_name
-mkdir dev-patch
 
-download_link=https://raw.githubusercontent.com/nus-apr/efffix-benchmark/main/source/$project_name-instrumented.tar.gz
+tar_name=x264-instrumented.tar.gz
+download_link=https://raw.githubusercontent.com/nus-apr/efffix-benchmark/main/source/$tar_name
 mkdir tmp
 wget $download_link
-tar -xzf $project_name.tar.gz -C tmp
+tar -xzf $tar_name -C tmp
 mv tmp/$project_name src
 rm -rf tmp
-
-if [ -d "/data/$project_name/pre" ]
-then
-    cp -rf /data/$project_name/pre $dir_name
-fi
