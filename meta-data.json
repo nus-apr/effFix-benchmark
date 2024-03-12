@@ -19,8 +19,7 @@
     "build_script": "build.sh",
     "config_command": "phpize && ./configure",
     "build_command": "make -j32",
-    "compile_programs": [],
-    "pulse_args": "--pulse-max-disjuncts 100"
+    "compile_programs": []
   },
   {
     "id": 2,
@@ -43,8 +42,7 @@
     "build_script": "build.sh",
     "config_command": "phpize && ./configure",
     "build_command": "make -j32",
-    "compile_programs": [],
-    "pulse_args": "--pulse-max-disjuncts 100"
+    "compile_programs": []
   },
   {
     "id": 3,
@@ -67,8 +65,7 @@
     "build_script": "build.sh",
     "config_command": "phpize && ./configure",
     "build_command": "make -j32",
-    "compile_programs": [],
-    "pulse_args": "--pulse-max-disjuncts 100"
+    "compile_programs": []
   },
   {
     "id": 4,
@@ -89,8 +86,7 @@
     "config_script": "config.sh",
     "config_command": "./autogen.sh && ./configure",
     "build_command": "make CFLAGS='-fcommon' -j32",
-    "compile_programs": [],
-    "pulse_args": "--pulse-max-disjuncts 100"
+    "compile_programs": []
   },
   {
     "id": 5,
@@ -112,8 +108,7 @@
     "build_script": "build.sh",
     "config_command": "./configure",
     "build_command": "make -j32",
-    "compile_programs": [],
-    "pulse_args": "--pulse-max-disjuncts 100"
+    "compile_programs": []
   },
   {
     "id": 6,
@@ -136,8 +131,7 @@
     "build_script": "build.sh",
     "config_command": "./configure",
     "build_command": "make -j32",
-    "compile_programs": [],
-    "pulse_args": "--pulse-max-disjuncts 100"
+    "compile_programs": []
   },
   {
     "id": 7,
@@ -159,8 +153,7 @@
     "build_script": "build.sh",
     "config_command": "./configure",
     "build_command": "make -j32",
-    "compile_programs": [],
-    "pulse_args": "--pulse-max-disjuncts 100"
+    "compile_programs": []
   },
   {
     "id": 8,
@@ -182,8 +175,7 @@
     "build_script": "build.sh",
     "config_command": "./configure",
     "build_command": "make -j32",
-    "compile_programs": [],
-    "pulse_args": "--pulse-max-disjuncts 100"
+    "compile_programs": []
   },
   {
     "id": 9,
@@ -206,8 +198,7 @@
     "build_script": "build.sh",
     "config_command": "./configure",
     "build_command": "make -j32",
-    "compile_programs": [],
-    "pulse_args": "--pulse-max-disjuncts 100"
+    "compile_programs": []
   },
   {
     "id": 10,
@@ -229,8 +220,7 @@
     "build_script": "build.sh",
     "config_command": "./configure",
     "build_command": "make -j32",
-    "compile_programs": [],
-    "pulse_args": "--pulse-max-disjuncts 100"
+    "compile_programs": []
   },
   {
     "id": 11,
@@ -252,8 +242,7 @@
     "build_script": "build.sh",
     "config_command": "autoreconf && ./configure",
     "build_command": "make CFLAGS='-fcommon' -j32",
-    "compile_programs": [],
-    "pulse_args": "--pulse-max-disjuncts 50"
+    "compile_programs": []
   },
   {
     "id": 12,
@@ -275,8 +264,7 @@
     "build_script": "build.sh",
     "config_command": "autoreconf && ./configure",
     "build_command": "make CFLAGS='-fcommon' -j32",
-    "compile_programs": [],
-    "pulse_args": "--pulse-max-disjuncts 50"
+    "compile_programs": []
   },
   {
     "id": 13,
@@ -298,8 +286,7 @@
     "build_script": "build.sh",
     "config_command": "autoreconf && ./configure",
     "build_command": "make CFLAGS='-fcommon' -j32",
-    "compile_programs": [],
-    "pulse_args": "--pulse-max-disjuncts 50"
+    "compile_programs": []
   },
   {
     "id": 14,
@@ -321,8 +308,7 @@
     "build_script": "build.sh",
     "config_command": "autoreconf && ./configure",
     "build_command": "make CFLAGS='-fcommon' -j32",
-    "compile_programs": [],
-    "pulse_args": "--pulse-max-disjuncts 50"
+    "compile_programs": []
   },
   {
     "id": 15,
@@ -344,8 +330,7 @@
     "build_script": "build.sh",
     "config_command": "autoreconf && ./configure",
     "build_command": "make CFLAGS='-fcommon' -j32",
-    "compile_programs": [],
-    "pulse_args": "--pulse-max-disjuncts 50"
+    "compile_programs": []
   },
   {
     "id": 16,
@@ -367,8 +352,7 @@
     "build_script": "build.sh",
     "config_command": "autoreconf && ./configure",
     "build_command": "make CFLAGS='-fcommon' -j32",
-    "compile_programs": [],
-    "pulse_args": "--pulse-max-disjuncts 50"
+    "compile_programs": []
   },
   {
     "id": 17,
@@ -390,8 +374,7 @@
     "build_script": "build.sh",
     "build_command": "make CFLAGS='-fcommon' -j32",
     "config_command": "autoreconf && ./configure",
-    "compile_programs": [],
-    "pulse_args": "--pulse-max-disjuncts 50"
+    "compile_programs": []
   },
   {
     "id": 18,
@@ -413,8 +396,7 @@
     "build_script": "build.sh",
     "config_command": "autoreconf && ./configure",
     "build_command": "make CFLAGS='-fcommon' -j32",
-    "compile_programs": [],
-    "pulse_args": "--pulse-max-disjuncts 50"
+    "compile_programs": []
   },
   {
     "id": 19,
@@ -438,8 +420,7 @@
     "build_command": "make",
     "compile_programs": [
       "build_crypto"
-    ],
-    "pulse_args": "--pulse-max-disjuncts 100 --pulse-model-malloc-pattern CRYPTO_malloc --pulse-model-free-pattern CRYPTO_free --pulse-model-realloc-pattern CRYPTO_realloc"
+    ]
   },
   {
     "id": 20,
@@ -463,8 +444,7 @@
     "build_command": "make",
     "compile_programs": [
       "build_crypto"
-    ],
-    "pulse_args": "--pulse-max-disjuncts 100 --pulse-model-malloc-pattern CRYPTO_malloc --pulse-model-free-pattern CRYPTO_free --pulse-model-realloc-pattern CRYPTO_realloc"
+    ]
   },
   {
     "id": 21,
@@ -488,8 +468,7 @@
     "build_command": "make",
     "compile_programs": [
       "build_crypto"
-    ],
-    "pulse_args": "--pulse-max-disjuncts 100 --pulse-model-malloc-pattern CRYPTO_malloc --pulse-model-free-pattern CRYPTO_free --pulse-model-realloc-pattern CRYPTO_realloc"
+    ]
   },
   {
     "id": 22,
@@ -513,8 +492,7 @@
     "build_command": "make",
     "compile_programs": [
       "build_engines"
-    ],
-    "pulse_args": "--pulse-max-disjuncts 100 --pulse-model-malloc-pattern CRYPTO_malloc --pulse-model-free-pattern CRYPTO_free --pulse-model-realloc-pattern CRYPTO_realloc"
+    ]
   },
   {
     "id": 23,
@@ -538,8 +516,7 @@
     "build_command": "make -j`nproc` drivers/gpu/drm/drm_framebuffer.o",
     "compile_programs": [
       "-C tools/objtool elf.o"
-    ],
-    "pulse_args": "--pulse-max-disjuncts 50"
+    ]
   },
   {
     "id": 24,
@@ -563,8 +540,7 @@
     "build_command": "make -j`nproc` drivers/gpu/drm/drm_framebuffer.o",
     "compile_programs": [
       "-C tools/objtool orc_gen.o"
-    ],
-    "pulse_args": "--pulse-max-disjuncts 50"
+    ]
   },
   {
     "id": 25,
@@ -588,8 +564,7 @@
     "build_command": "make",
     "compile_programs": [
       "build_crypto"
-    ],
-    "pulse_args": "--pulse-max-disjuncts 100 --pulse-model-malloc-pattern CRYPTO_malloc --pulse-model-free-pattern CRYPTO_free --pulse-model-realloc-pattern CRYPTO_realloc"
+    ]
   },
   {
     "id": 26,
@@ -613,8 +588,7 @@
     "build_command": "make",
     "compile_programs": [
       "build_crypto"
-    ],
-    "pulse_args": "--pulse-max-disjuncts 100 --pulse-model-malloc-pattern CRYPTO_malloc --pulse-model-free-pattern CRYPTO_free --pulse-model-realloc-pattern CRYPTO_realloc"
+    ]
   },
   {
     "id": 27,
@@ -638,8 +612,7 @@
     "build_command": "make",
     "compile_programs": [
       "build_crypto"
-    ],
-    "pulse_args": "--pulse-max-disjuncts 100 --pulse-model-malloc-pattern CRYPTO_malloc --pulse-model-free-pattern CRYPTO_free --pulse-model-realloc-pattern CRYPTO_realloc"
+    ]
   },
   {
     "id": 28,
@@ -663,8 +636,7 @@
     "build_command": "make",
     "compile_programs": [
       "build_crypto"
-    ],
-    "pulse_args": "--pulse-max-disjuncts 100 --pulse-model-malloc-pattern CRYPTO_malloc --pulse-model-free-pattern CRYPTO_free --pulse-model-realloc-pattern CRYPTO_realloc"
+    ]
   },
   {
     "id": 29,
@@ -688,8 +660,7 @@
     "build_command": "make",
     "compile_programs": [
       "build_ssl"
-    ],
-    "pulse_args": "--pulse-max-disjuncts 100 --pulse-model-malloc-pattern CRYPTO_malloc --pulse-model-free-pattern CRYPTO_free --pulse-model-realloc-pattern CRYPTO_realloc"
+    ]
   },
   {
     "id": 30,
@@ -713,8 +684,7 @@
     "build_command": "make -j32",
     "compile_programs": [
       "build_apps"
-    ],
-    "pulse_args": "--pulse-max-disjuncts 50 --pulse-model-malloc-pattern CRYPTO_malloc --pulse-model-free-pattern CRYPTO_free --pulse-model-realloc-pattern CRYPTO_realloc --pulse-skip-procedures 'test_single_eval\\|openssl_add_all_*'"
+    ]
   },
   {
     "id": 31,
@@ -738,8 +708,7 @@
     "build_command": "make -j32",
     "compile_programs": [
       "build_apps"
-    ],
-    "pulse_args": "--pulse-max-disjuncts 50 --pulse-model-malloc-pattern CRYPTO_malloc --pulse-model-free-pattern CRYPTO_free --pulse-model-realloc-pattern CRYPTO_realloc --pulse-skip-procedures 'test_single_eval\\|openssl_add_all_*'"
+    ]
   },
   {
     "id": 32,
@@ -763,8 +732,7 @@
     "build_command": "make -j32",
     "compile_programs": [
       "build_tests"
-    ],
-    "pulse_args": "--pulse-max-disjuncts 50 --pulse-model-malloc-pattern CRYPTO_malloc --pulse-model-free-pattern CRYPTO_free --pulse-model-realloc-pattern CRYPTO_realloc --pulse-skip-procedures 'test_single_eval\\|openssl_add_all_*'"
+    ]
   },
   {
     "id": 33,
@@ -788,8 +756,7 @@
     "build_command": "make -j`nproc` drivers/gpu/drm/drm_framebuffer.o",
     "compile_programs": [
       "-C tools/lib/subcmd help.o"
-    ],
-    "pulse_args": "--pulse-max-disjuncts 50"
+    ]
   },
   {
     "id": 34,
