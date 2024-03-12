@@ -4,7 +4,7 @@ C Programs with memory-errors detected by Infer (Pulse)
 
 ##  Data Set
 
-| Subject        |# Memory Leak| # NULL Pointer Dereference | # Double Free | # Use After Free | # Total |
+| Subject        |# Leak| # NPE | # DF | # UAF | # Total |
 |----------------|---|---|---|---|---|
 | swoole         | 3 | - | - | - | 3 |
 | p11-kit        | 1 | - | 2 | 1 | 4 |
@@ -17,6 +17,10 @@ C Programs with memory-errors detected by Infer (Pulse)
 | lxc            | - | - | - | 2 | 2 |
 | Total          |24 | 9 | 4 |10 |47 |
 
+- Leak: memory leak
+- NPE: null pointer dereference
+- DF: double free
+- UAF: use after free
 
 ## Contributors
 * Yuntong Zhang
