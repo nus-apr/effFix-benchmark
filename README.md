@@ -46,3 +46,6 @@ C Programs with memory-errors detected by Infer (Pulse)
 - build_command_project: Overall build command used for building the project. Mainly used in EffFix pre stage for whole program analysis
 - build_command_repair: Build command for the specific module/object that is relevant for the repair. Currently used by all tools.
     For smaller projects, this can be the same as build_command_project.
+
+- bug_commit_id: Only for linux. Used in setting up project source code. Linux is not packged in tar
+    due to its size.

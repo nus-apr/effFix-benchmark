@@ -109,6 +109,29 @@ rm -rf tmp
     os.system(f"chmod +x {setup_file}")
 
 
+# linux is special, since source code is not in tar
+def write_setup_file_linux(bug_commit_id, setup_file):
+    template = f"""#!/bin/bash
+script_dir="$( cd "$( dirname "${{BASH_SOURCE[0]}}" )" &> /dev/null && pwd )"
+benchmark_name=$(echo $script_dir | rev | cut -d "/" -f 3 | rev)
+project_name=$(echo $script_dir | rev | cut -d "/" -f 2 | rev)
+bug_id=$(echo $script_dir | rev | cut -d "/" -f 1 | rev)
+dir_name=/experiment/$benchmark_name/$project_name/$bug_id
+current_dir=$PWD
+mkdir -p $dir_name
+cd $dir_name
+
+project_url=https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/
+bug_commit_id={bug_commit_id}
+cd $dir_name
+GIT_SSL_NO_VERIFY=true git clone $project_url src
+cd src
+git checkout $bug_commit_id
+"""
+    with open(setup_file, "w") as f:
+        f.write(template)
+    os.system(f"chmod +x {setup_file}")
+
 def main():
     dir_path = os.path.dirname(os.path.realpath(__file__))
     root_dir = pjoin(dir_path, "..")
@@ -138,8 +161,13 @@ def main():
         write_deps_file(deps, deps_file)
 
         setup_file = pjoin(bug_dir, "setup.sh")
-        source_tar = entry.get("source_tar", "")
-        write_setup_file(source_tar, setup_file)
+        # for this, linux and others should be treated differently
+        if subject == "linux-kernel-5":
+            bug_commit_id = entry.get("bug_commit_id", "")
+            write_setup_file_linux(bug_commit_id, setup_file)
+        else:
+            source_tar = entry.get("source_tar", "")
+            write_setup_file(source_tar, setup_file)
 
         # write tool dependent scripts
         efffix_dir = pjoin(bug_dir, "EffFix")

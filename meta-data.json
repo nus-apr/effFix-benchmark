@@ -453,8 +453,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
-    "build_command_project": "make",
-    "build_command_repair": "make build_crypto",
+    "build_command_project": "make -j32",
+    "build_command_repair": "make -j32 build_crypto",
     "source_tar": "openssl-1-instrumented.tar.gz",
     "deps": ["gcc", "make", "perl", "wget"]
   },
@@ -477,8 +477,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
-    "build_command_project": "make",
-    "build_command_repair": "make build_crypto",
+    "build_command_project": "make -j32",
+    "build_command_repair": "make -j32 build_crypto",
     "source_tar": "openssl-1-instrumented.tar.gz",
     "deps": ["gcc", "make", "perl", "wget"]
   },
@@ -501,8 +501,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
-    "build_command_project": "make",
-    "build_command_repair": "make build_crypto",
+    "build_command_project": "make -j32",
+    "build_command_repair": "make -j32 build_crypto",
     "source_tar": "openssl-1-instrumented.tar.gz",
     "deps": ["gcc", "make", "perl", "wget"]
   },
@@ -525,8 +525,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
-    "build_command_project": "make",
-    "build_command_repair": "make build_engines",
+    "build_command_project": "make -j32",
+    "build_command_repair": "make -j32 build_engines",
     "source_tar": "openssl-1-instrumented.tar.gz",
     "deps": ["gcc", "make", "perl", "wget"]
   },
@@ -551,7 +551,8 @@
     "config_command": "make defconfig",
     "build_command_project": "make -j32 drivers/gpu/drm/drm_framebuffer.o",
     "build_command_repair": "make -j32 -C tools/objtool elf.o",
-    "deps": ["bc", "gcc", "clang", "libssl-dev", "libelf-dev"]
+    "deps": ["bc", "gcc", "clang", "libssl-dev", "libelf-dev"],
+    "bug_commit_id": "v5.0-rc8"
   },
   {
     "id": 24,
@@ -574,7 +575,8 @@
     "config_command": "make defconfig",
     "build_command_project": "make -j32 drivers/gpu/drm/drm_framebuffer.o",
     "build_command_repair": "make -j32 -C tools/objtool orc_gen.o",
-    "deps": ["bc", "gcc", "clang", "libssl-dev", "libelf-dev"]
+    "deps": ["bc", "gcc", "clang", "libssl-dev", "libelf-dev"],
+    "bug_commit_id": "v5.0-rc8"
   },
   {
     "id": 25,
@@ -595,8 +597,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
-    "build_command_project": "make",
-    "build_command_repair": "make build_crypto",
+    "build_command_project": "make -j32",
+    "build_command_repair": "make -j32 build_crypto",
     "source_tar": "openssl-1-instrumented.tar.gz",
     "deps": ["gcc", "make", "perl", "wget"]
   },
@@ -619,8 +621,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
-    "build_command_project": "make",
-    "build_command_repair": "make build_crypto",
+    "build_command_project": "make -j32",
+    "build_command_repair": "make -j32 build_crypto",
     "source_tar": "openssl-1-instrumented.tar.gz",
     "deps": ["gcc", "make", "perl", "wget"]
   },
@@ -643,8 +645,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
-    "build_command_project": "make",
-    "build_command_repair": "make build_crypto",
+    "build_command_project": "make -j32",
+    "build_command_repair": "make -j32 build_crypto",
     "source_tar": "openssl-1-instrumented.tar.gz",
     "deps": ["gcc", "make", "perl", "wget"]
   },
@@ -667,8 +669,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
-    "build_command_project": "make",
-    "build_command_repair": "make build_crypto",
+    "build_command_project": "make -j32",
+    "build_command_repair": "make -j32 build_crypto",
     "source_tar": "openssl-1-instrumented.tar.gz",
     "deps": ["gcc", "make", "perl", "wget"]
   },
@@ -691,8 +693,8 @@
     "config_script": "config.sh",
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
-    "build_command_project": "make",
-    "build_command_repair": "make build_ssl",
+    "build_command_project": "make -j32",
+    "build_command_repair": "make -j32 build_ssl",
     "source_tar": "openssl-1-instrumented.tar.gz",
     "deps": ["gcc", "make", "perl", "wget"]
   },
@@ -789,7 +791,8 @@
     "config_command": "make defconfig",
     "build_command_project": "make -j32 drivers/gpu/drm/drm_framebuffer.o",
     "build_command_repair":"make -j32 -C tools/lib/subcmd help.o",
-    "deps": ["bc", "gcc", "clang", "libssl-dev", "libelf-dev"]
+    "deps": ["bc", "gcc", "clang", "libssl-dev", "libelf-dev"],
+    "bug_commit_id": "v5.0-rc8"
   },
   {
     "id": 34,
