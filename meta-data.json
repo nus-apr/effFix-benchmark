@@ -17,9 +17,11 @@
     "build_dir": "",
     "config_script": "config.sh",
     "build_script": "build.sh",
-    "config_command": "phpize && ./configure",
+    "config_command": "phpize && ./configure --disable-dependency-tracking",
     "build_command_project": "make -j32",
-    "build_command_repair": "make -j32"
+    "build_command_repair": "make -j32",
+    "source_tar": "swoole-instrumented.tar.gz",
+    "deps": ["bison", "wget"]
   },
   {
     "id": 2,
@@ -40,9 +42,11 @@
     "build_dir": "",
     "config_script": "config.sh",
     "build_script": "build.sh",
-    "config_command": "phpize && ./configure",
+    "config_command": "phpize && ./configure --disable-dependency-tracking",
     "build_command_project": "make -j32",
-    "build_command_repair": "make -j32"
+    "build_command_repair": "make -j32",
+    "source_tar": "swoole-instrumented.tar.gz",
+    "deps": ["bison", "wget"]
   },
   {
     "id": 3,
@@ -63,9 +67,11 @@
     "build_dir": "",
     "config_script": "config.sh",
     "build_script": "build.sh",
-    "config_command": "phpize && ./configure",
+    "config_command": "phpize && ./configure --disable-dependency-tracking",
     "build_command_project": "make -j32",
-    "build_command_repair": "make -j32"
+    "build_command_repair": "make -j32",
+    "source_tar": "swoole-instrumented.tar.gz",
+    "deps": ["bison", "wget"]
   },
   {
     "id": 4,
@@ -84,9 +90,11 @@
     },
     "build_dir": "",
     "config_script": "config.sh",
-    "config_command": "./autogen.sh && ./configure",
+    "config_command": "./autogen.sh && ./configure --disable-dependency-tracking",
     "build_command_project": "make CFLAGS='-fcommon' -j32",
-    "build_command_repair": "make CFLAGS='-fcommon' -j32"
+    "build_command_repair": "make CFLAGS='-fcommon' -j32",
+    "source_tar": "p11-kit-instrumented.tar.gz",
+    "deps": ["bison", "wget"]
   },
   {
     "id": 5,
@@ -106,9 +114,11 @@
     "build_dir": "",
     "config_script": "config.sh",
     "build_script": "build.sh",
-    "config_command": "./configure",
+    "config_command": "./configure --disable-dependency-tracking",
     "build_command_project": "make -j32",
-    "build_command_repair": "make -j32"
+    "build_command_repair": "make -j32",
+    "source_tar": "x264-instrumented.tar.gz",
+    "deps": ["bison", "wget"]
   },
   {
     "id": 6,
@@ -129,9 +139,11 @@
     "build_dir": "",
     "config_script": "config.sh",
     "build_script": "build.sh",
-    "config_command": "./configure",
+    "config_command": "./configure --disable-dependency-tracking",
     "build_command_project": "make -j32",
-    "build_command_repair": "make -j32"
+    "build_command_repair": "make -j32",
+    "source_tar": "x264-instrumented.tar.gz",
+    "deps": ["bison", "wget"]
   },
   {
     "id": 7,
@@ -151,9 +163,11 @@
     "build_dir": "",
     "config_script": "config.sh",
     "build_script": "build.sh",
-    "config_command": "./configure",
+    "config_command": "./configure --disable-dependency-tracking",
     "build_command_project": "make -j32",
-    "build_command_repair": "make -j32"
+    "build_command_repair": "make -j32",
+    "source_tar": "x264-instrumented.tar.gz",
+    "deps": ["bison", "wget"]
   },
   {
     "id": 8,
@@ -173,9 +187,11 @@
     "build_dir": "",
     "config_script": "config.sh",
     "build_script": "build.sh",
-    "config_command": "./configure",
+    "config_command": "./configure --disable-dependency-tracking",
     "build_command_project": "make -j32",
-    "build_command_repair": "make -j32"
+    "build_command_repair": "make -j32",
+    "source_tar": "x264-instrumented.tar.gz",
+    "deps": ["bison", "wget"]
   },
   {
     "id": 9,
@@ -196,9 +212,11 @@
     "build_dir": "",
     "config_script": "config.sh",
     "build_script": "build.sh",
-    "config_command": "./configure",
+    "config_command": "./configure --disable-dependency-tracking",
     "build_command_project": "make -j32",
-    "build_command_repair": "make -j32"
+    "build_command_repair": "make -j32",
+    "source_tar": "x264-instrumented.tar.gz",
+    "deps": ["bison", "wget"]
   },
   {
     "id": 10,
@@ -218,9 +236,11 @@
     "build_dir": "",
     "config_script": "config.sh",
     "build_script": "build.sh",
-    "config_command": "./configure",
+    "config_command": "./configure --disable-dependency-tracking",
     "build_command_project": "make -j32",
-    "build_command_repair": "make -j32"
+    "build_command_repair": "make -j32",
+    "source_tar": "x264-instrumented.tar.gz",
+    "deps": ["bison", "wget"]
   },
   {
     "id": 11,
@@ -240,9 +260,11 @@
     "build_dir": "",
     "config_script": "config.sh",
     "build_script": "build.sh",
-    "config_command": "autoreconf && ./configure",
+    "config_command": "autoreconf && ./configure --disable-dependency-tracking",
     "build_command_project": "make CFLAGS='-fcommon' -j32",
-    "build_command_repair": "make CFLAGS='-fcommon' -j32"
+    "build_command_repair": "make CFLAGS='-fcommon' -j32",
+    "source_tar": "snort-instrumented.tar.gz",
+    "deps": ["bison", "wget"]
   },
   {
     "id": 12,
@@ -262,9 +284,11 @@
     "build_dir": "",
     "config_script": "config.sh",
     "build_script": "build.sh",
-    "config_command": "autoreconf && ./configure",
+    "config_command": "autoreconf && ./configure --disable-dependency-tracking",
     "build_command_project": "make CFLAGS='-fcommon' -j32",
-    "build_command_repair": "make CFLAGS='-fcommon' -j32"
+    "build_command_repair": "make CFLAGS='-fcommon' -j32",
+    "source_tar": "snort-instrumented.tar.gz",
+    "deps": ["bison", "wget"]
   },
   {
     "id": 13,
@@ -284,9 +308,11 @@
     "build_dir": "",
     "config_script": "config.sh",
     "build_script": "build.sh",
-    "config_command": "autoreconf && ./configure",
+    "config_command": "autoreconf && ./configure --disable-dependency-tracking",
     "build_command_project": "make CFLAGS='-fcommon' -j32",
-    "build_command_repair": "make CFLAGS='-fcommon' -j32"
+    "build_command_repair": "make CFLAGS='-fcommon' -j32",
+    "source_tar": "snort-instrumented.tar.gz",
+    "deps": ["bison", "wget"]
   },
   {
     "id": 14,
@@ -306,9 +332,11 @@
     "build_dir": "",
     "config_script": "config.sh",
     "build_script": "build.sh",
-    "config_command": "autoreconf && ./configure",
+    "config_command": "autoreconf && ./configure --disable-dependency-tracking",
     "build_command_project": "make CFLAGS='-fcommon' -j32",
-    "build_command_repair": "make CFLAGS='-fcommon' -j32"
+    "build_command_repair": "make CFLAGS='-fcommon' -j32",
+    "source_tar": "snort-instrumented.tar.gz",
+    "deps": ["bison", "wget"]
   },
   {
     "id": 15,
@@ -328,9 +356,11 @@
     "build_dir": "",
     "config_script": "config.sh",
     "build_script": "build.sh",
-    "config_command": "autoreconf && ./configure",
+    "config_command": "autoreconf && ./configure --disable-dependency-tracking",
     "build_command_project": "make CFLAGS='-fcommon' -j32",
-    "build_command_repair": "make CFLAGS='-fcommon' -j32"
+    "build_command_repair": "make CFLAGS='-fcommon' -j32",
+    "source_tar": "snort-instrumented.tar.gz",
+    "deps": ["bison", "wget"]
   },
   {
     "id": 16,
@@ -350,9 +380,11 @@
     "build_dir": "",
     "config_script": "config.sh",
     "build_script": "build.sh",
-    "config_command": "autoreconf && ./configure",
+    "config_command": "autoreconf && ./configure --disable-dependency-tracking",
     "build_command_project": "make CFLAGS='-fcommon' -j32",
-    "build_command_repair": "make CFLAGS='-fcommon' -j32"
+    "build_command_repair": "make CFLAGS='-fcommon' -j32",
+    "source_tar": "snort-instrumented.tar.gz",
+    "deps": ["bison", "wget"]
   },
   {
     "id": 17,
@@ -372,9 +404,11 @@
     "build_dir": "",
     "config_script": "config.sh",
     "build_script": "build.sh",
-    "config_command": "autoreconf && ./configure",
+    "config_command": "autoreconf && ./configure --disable-dependency-tracking",
     "build_command_project": "make CFLAGS='-fcommon' -j32",
-    "build_command_repair": "make CFLAGS='-fcommon' -j32"
+    "build_command_repair": "make CFLAGS='-fcommon' -j32",
+    "source_tar": "snort-instrumented.tar.gz",
+    "deps": ["bison", "wget"]
   },
   {
     "id": 18,
@@ -394,9 +428,11 @@
     "build_dir": "",
     "config_script": "config.sh",
     "build_script": "build.sh",
-    "config_command": "autoreconf && ./configure",
+    "config_command": "autoreconf && ./configure --disable-dependency-tracking",
     "build_command_project": "make CFLAGS='-fcommon' -j32",
-    "build_command_repair": "make CFLAGS='-fcommon' -j32"
+    "build_command_repair": "make CFLAGS='-fcommon' -j32",
+    "source_tar": "snort-instrumented.tar.gz",
+    "deps": ["bison", "wget"]
   },
   {
     "id": 19,
@@ -418,7 +454,9 @@
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
     "build_command_project": "make",
-    "build_command_repair": "make build_crypto"
+    "build_command_repair": "make build_crypto",
+    "source_tar": "openssl-1-instrumented.tar.gz",
+    "deps": ["gcc", "make", "perl", "wget"]
   },
   {
     "id": 20,
@@ -440,7 +478,9 @@
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
     "build_command_project": "make",
-    "build_command_repair": "make build_crypto"
+    "build_command_repair": "make build_crypto",
+    "source_tar": "openssl-1-instrumented.tar.gz",
+    "deps": ["gcc", "make", "perl", "wget"]
   },
   {
     "id": 21,
@@ -462,7 +502,9 @@
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
     "build_command_project": "make",
-    "build_command_repair": "make build_crypto"
+    "build_command_repair": "make build_crypto",
+    "source_tar": "openssl-1-instrumented.tar.gz",
+    "deps": ["gcc", "make", "perl", "wget"]
   },
   {
     "id": 22,
@@ -484,7 +526,9 @@
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
     "build_command_project": "make",
-    "build_command_repair": "make build_engines"
+    "build_command_repair": "make build_engines",
+    "source_tar": "openssl-1-instrumented.tar.gz",
+    "deps": ["gcc", "make", "perl", "wget"]
   },
   {
     "id": 23,
@@ -506,7 +550,8 @@
     "build_script": "build.sh",
     "config_command": "make defconfig",
     "build_command_project": "make -j32 drivers/gpu/drm/drm_framebuffer.o",
-    "build_command_repair": "make -j32 -C tools/objtool elf.o"
+    "build_command_repair": "make -j32 -C tools/objtool elf.o",
+    "deps": ["bc", "gcc", "clang", "libssl-dev", "libelf-dev"]
   },
   {
     "id": 24,
@@ -528,7 +573,8 @@
     "build_script": "build.sh",
     "config_command": "make defconfig",
     "build_command_project": "make -j32 drivers/gpu/drm/drm_framebuffer.o",
-    "build_command_repair": "make -j32 -C tools/objtool orc_gen.o"
+    "build_command_repair": "make -j32 -C tools/objtool orc_gen.o",
+    "deps": ["bc", "gcc", "clang", "libssl-dev", "libelf-dev"]
   },
   {
     "id": 25,
@@ -550,7 +596,9 @@
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
     "build_command_project": "make",
-    "build_command_repair": "make build_crypto"
+    "build_command_repair": "make build_crypto",
+    "source_tar": "openssl-1-instrumented.tar.gz",
+    "deps": ["gcc", "make", "perl", "wget"]
   },
   {
     "id": 26,
@@ -572,7 +620,9 @@
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
     "build_command_project": "make",
-    "build_command_repair": "make build_crypto"
+    "build_command_repair": "make build_crypto",
+    "source_tar": "openssl-1-instrumented.tar.gz",
+    "deps": ["gcc", "make", "perl", "wget"]
   },
   {
     "id": 27,
@@ -594,7 +644,9 @@
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
     "build_command_project": "make",
-    "build_command_repair": "make build_crypto"
+    "build_command_repair": "make build_crypto",
+    "source_tar": "openssl-1-instrumented.tar.gz",
+    "deps": ["gcc", "make", "perl", "wget"]
   },
   {
     "id": 28,
@@ -616,7 +668,9 @@
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
     "build_command_project": "make",
-    "build_command_repair": "make build_crypto"
+    "build_command_repair": "make build_crypto",
+    "source_tar": "openssl-1-instrumented.tar.gz",
+    "deps": ["gcc", "make", "perl", "wget"]
   },
   {
     "id": 29,
@@ -638,7 +692,9 @@
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
     "build_command_project": "make",
-    "build_command_repair": "make build_ssl"
+    "build_command_repair": "make build_ssl",
+    "source_tar": "openssl-1-instrumented.tar.gz",
+    "deps": ["gcc", "make", "perl", "wget"]
   },
   {
     "id": 30,
@@ -660,7 +716,9 @@
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
     "build_command_project": "make -j32",
-    "build_command_repair": "make -j32 build_apps"
+    "build_command_repair": "make -j32 build_apps",
+    "source_tar": "openssl-3-instrumented.tar.gz",
+    "deps": ["gcc", "make", "perl", "wget"]
   },
   {
     "id": 31,
@@ -682,7 +740,9 @@
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
     "build_command_project": "make -j32",
-    "build_command_repair": "make -j32 build_apps"
+    "build_command_repair": "make -j32 build_apps",
+    "source_tar": "openssl-3-instrumented.tar.gz",
+    "deps": ["gcc", "make", "perl", "wget"]
   },
   {
     "id": 32,
@@ -704,7 +764,9 @@
     "build_script": "build.sh",
     "config_command": "CC=gcc ./config",
     "build_command_project": "make -j32",
-    "build_command_repair": "make -j32 build_tests"
+    "build_command_repair": "make -j32 build_tests",
+    "source_tar": "openssl-3-instrumented.tar.gz",
+    "deps": ["gcc", "make", "perl", "wget"]
   },
   {
     "id": 33,
@@ -726,7 +788,8 @@
     "build_script": "build.sh",
     "config_command": "make defconfig",
     "build_command_project": "make -j32 drivers/gpu/drm/drm_framebuffer.o",
-    "build_command_repair":"make -j32 -C tools/lib/subcmd help.o"
+    "build_command_repair":"make -j32 -C tools/lib/subcmd help.o",
+    "deps": ["bc", "gcc", "clang", "libssl-dev", "libelf-dev"]
   },
   {
     "id": 34,
@@ -747,7 +810,9 @@
     "config_script": "config.sh",
     "config_command": "./autogen.sh && ./configure",
     "build_command_project": "make -j32 libgrubmods.a",
-    "build_command_repair": "make -j32 libgrubmods.a"
+    "build_command_repair": "make -j32 libgrubmods.a",
+    "source_tar": "double-free-1-grub.tar.gz",
+    "deps": ["make", "bison", "flex", "gettext", "binutils", "libdevmapper-dev"]
   },
   {
     "id": 35,
@@ -768,7 +833,9 @@
     "config_script": "config.sh",
     "config_command": "./autogen.sh && ./configure",
     "build_command_project": "make -j32 libgrubmods.a",
-    "build_command_repair": "make -j32 libgrubmods.a"
+    "build_command_repair": "make -j32 libgrubmods.a",
+    "source_tar": "double-free-2-grub.tar.gz",
+    "deps": ["make", "bison", "flex", "gettext", "binutils", "libdevmapper-dev"]
   },
   {
     "id": 36,
@@ -787,9 +854,11 @@
       "line": 318
     },
     "config_script": "config.sh",
-    "config_command": "./autogen.sh",
+    "config_command": "./autogen.sh && ./configure --disable-dependency-tracking",
     "build_command_project": "make -j32",
-    "build_command_repair": "make -j32"
+    "build_command_repair": "make -j32",
+    "source_tar": "double-free-3-p11-kit-instrumented.tar.gz",
+    "deps": ["bison", "wget"]
   },
   {
     "id": 37,
@@ -808,9 +877,11 @@
       "line": 678
     },
     "config_script": "config.sh",
-    "config_command": "./autogen.sh",
+    "config_command": "./autogen.sh && ./configure --disable-dependency-tracking",
     "build_command_project": "make p11-kit-server -j32",
-    "build_command_repair": "make p11-kit-server -j32"
+    "build_command_repair": "make p11-kit-server -j32",
+    "source_tar": "double-free-4-p11-kit-instrumented.tar.gz",
+    "deps": ["bison", "wget"]
   },
   {
     "id": 38,
@@ -832,7 +903,9 @@
     "config_command": "./autogen.sh && CC=gcc CFLAGS='-Wno-error' ./configure && make grub_script.tab.h && make grub_script.yy.h && cd grub-core && make clean && cd ..",
     "build_dir": "grub-core",
     "build_command_project": "make -j32 normal.module",
-    "build_command_repair": "make -j32 normal.module"
+    "build_command_repair": "make -j32 normal.module",
+    "source_tar": "use-after-free-1-grub-instrumented.tar.gz",
+    "deps": ["make", "bison", "flex", "gettext", "binutils", "libdevmapper-dev"]
   },
   {
     "id": 39,
@@ -854,7 +927,9 @@
     "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure",
     "build_dir": "grub-core",
     "build_command_project": "make -j32 usb.module",
-    "build_command_repair": "make -j32 usb.module"
+    "build_command_repair": "make -j32 usb.module",
+    "source_tar": "use-after-free-2-grub-instrumented.tar.gz",
+    "deps": ["make", "bison", "flex", "gettext", "binutils", "libdevmapper-dev"]
   },
   {
     "id": 40,
@@ -876,7 +951,9 @@
     "config_command": "./autogen.sh && ./configure",
     "build_dir": "grub-core",
     "build_command_project": "make -j32 xnu.module",
-    "build_command_repair": "make -j32 xnu.module"
+    "build_command_repair": "make -j32 xnu.module",
+    "source_tar": "use-after-free-3-grub.tar.gz",
+    "deps": ["make", "bison", "flex", "gettext", "binutils", "libdevmapper-dev"]
   },
   {
     "id": 41,
@@ -898,7 +975,9 @@
     "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure",
     "build_dir": "grub-core",
     "build_command_project": "make -j32 scsi.module",
-    "build_command_repair": "make -j32 scsi.module"
+    "build_command_repair": "make -j32 scsi.module",
+    "source_tar": "use-after-free-4-grub-instrumented.tar.gz",
+    "deps": ["make", "bison", "flex", "gettext", "binutils", "libdevmapper-dev"]
   },
   {
     "id": 42,
@@ -920,7 +999,9 @@
     "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure",
     "build_dir": "grub-core",
     "build_command_project": "make -j32 search_label.module",
-    "build_command_repair": "make -j32 search_label.module"
+    "build_command_repair": "make -j32 search_label.module",
+    "source_tar": "use-after-free-5-grub-instrumented.tar.gz",
+    "deps": ["make", "bison", "flex", "gettext", "binutils", "libdevmapper-dev"]
   },
   {
     "id": 43,
@@ -942,7 +1023,9 @@
     "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure",
     "build_dir": "grub-core",
     "build_command_project": "make -j32 luks.module",
-    "build_command_repair": "make -j32 luks.module"
+    "build_command_repair": "make -j32 luks.module",
+    "source_tar": "use-after-free-6-grub-instrumented.tar.gz",
+    "deps": ["make", "bison", "flex", "gettext", "binutils", "libdevmapper-dev"]
   },
   {
     "id": 44,
@@ -964,7 +1047,9 @@
     "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure",
     "build_dir": "grub-core",
     "build_command_project": "make -j32 kernel.exec gettext.module",
-    "build_command_repair": "make -j32 kernel.exec gettext.module"
+    "build_command_repair": "make -j32 kernel.exec gettext.module",
+    "source_tar": "use-after-free-7-grub.tar.gz",
+    "deps": ["make", "bison", "flex", "gettext", "binutils", "libdevmapper-dev"]
   },
   {
     "id": 45,
@@ -983,10 +1068,12 @@
       "line": 250
     },
     "config_script": "config.sh",
-    "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure",
+    "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure --disable-dependency-tracking",
     "build_dir": "src/lxc",
     "build_command_project": "make -j32 lxc-execute",
-    "build_command_repair": "make -j32 lxc-execute"
+    "build_command_repair": "make -j32 lxc-execute",
+    "source_tar": "use-after-free-8-lxc.tar.gz",
+    "deps": ["libpcap-dev", "libgnutls28-dev"]
   },
   {
     "id": 46,
@@ -1005,10 +1092,12 @@
       "line": 1639
     },
     "config_script": "config.sh",
-    "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure --enable-gnutls",
+    "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure --enable-gnutls --disable-dependency-tracking",
     "build_dir": "src/lxc",
     "build_command_project": "make -j32",
-    "build_command_repair": "make -j32"
+    "build_command_repair": "make -j32",
+    "source_tar": "use-after-free-9-lxc.tar.gz",
+    "deps": ["libpcap-dev", "libgnutls28-dev"]
   },
   {
     "id": 47,
@@ -1027,8 +1116,10 @@
       "line": 680
     },
     "config_script": "config.sh",
-    "config_command": "./autogen.sh",
+    "config_command": "./autogen.sh && ./configure --disable-dependency-tracking",
     "build_command_project": "make -j32 p11-kit-server",
-    "build_command_repair": "make -j32 p11-kit-server"
+    "build_command_repair": "make -j32 p11-kit-server",
+    "source_tar": "use-after-free-10-p11-kit.tar.gz",
+    "deps": ["bison", "wget"]
   }
 ]
