@@ -22,7 +22,7 @@ script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 benchmark_name=$(echo $script_dir | rev | cut -d "/" -f 4 | rev)
 project_name=$(echo $script_dir | rev | cut -d "/" -f 3 | rev)
 bug_id=$(echo $script_dir | rev | cut -d "/" -f 2 | rev)
-dir_name=/experiment/$benchmark_name/$project_name/$bug_id
+dir_name=$1/$benchmark_name/$project_name/$bug_id
 self_dir_name=$dir_name/EffFix
 mkdir $self_dir_name
 
@@ -44,7 +44,7 @@ script_dir="$( cd "$( dirname "${{BASH_SOURCE[0]}}" )" &> /dev/null && pwd )"
 benchmark_name=$(echo $script_dir | rev | cut -d "/" -f 3 | rev)
 project_name=$(echo $script_dir | rev | cut -d "/" -f 2 | rev)
 bug_id=$(echo $script_dir | rev | cut -d "/" -f 1 | rev)
-dir_name=/experiment/$benchmark_name/$project_name/$bug_id
+dir_name=$1/$benchmark_name/$project_name/$bug_id
 cd $dir_name/src
 
 {build_command}
@@ -64,7 +64,7 @@ script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 benchmark_name=$(echo $script_dir | rev | cut -d "/" -f 3 | rev)
 project_name=$(echo $script_dir | rev | cut -d "/" -f 2 | rev)
 bug_id=$(echo $script_dir | rev | cut -d "/" -f 1 | rev)
-dir_name=/experiment/$benchmark_name/$project_name/$bug_id
+dir_name=$1/$benchmark_name/$project_name/$bug_id
 cd $dir_name/src
 """
     for cmd in config_commands:
@@ -91,7 +91,7 @@ script_dir="$( cd "$( dirname "${{BASH_SOURCE[0]}}" )" &> /dev/null && pwd )"
 benchmark_name=$(echo $script_dir | rev | cut -d "/" -f 3 | rev)
 project_name=$(echo $script_dir | rev | cut -d "/" -f 2 | rev)
 bug_id=$(echo $script_dir | rev | cut -d "/" -f 1 | rev)
-dir_name=/experiment/$benchmark_name/$project_name/$bug_id
+dir_name=$1/$benchmark_name/$project_name/$bug_id
 current_dir=$PWD
 mkdir -p $dir_name
 cd $dir_name
@@ -116,7 +116,7 @@ script_dir="$( cd "$( dirname "${{BASH_SOURCE[0]}}" )" &> /dev/null && pwd )"
 benchmark_name=$(echo $script_dir | rev | cut -d "/" -f 3 | rev)
 project_name=$(echo $script_dir | rev | cut -d "/" -f 2 | rev)
 bug_id=$(echo $script_dir | rev | cut -d "/" -f 1 | rev)
-dir_name=/experiment/$benchmark_name/$project_name/$bug_id
+dir_name=$1/$benchmark_name/$project_name/$bug_id
 current_dir=$PWD
 mkdir -p $dir_name
 cd $dir_name
