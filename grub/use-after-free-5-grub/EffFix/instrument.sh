@@ -10,5 +10,5 @@ mkdir $self_dir_name
 config_path=$self_dir_name/repair.conf
 
 cat > $config_path <<EOL
-pulse_args=...
+pulse_args:--pulse-model-malloc-pattern "grub_malloc\\|grub_zalloc" --pulse-model-free-pattern "grub_free" --pulse-model-skip-pattern "grub_strcmp\\|grub_strcasecmp\\|compare_fn\\|iterate_device\\|grub_strlen\\|grub_device_open\\|grub_device_close\\|grub_partition_iterate\\|grub_device_iterate" --pulse-max-disjuncts 50 --pulse-widen-threshold 1
 EOL

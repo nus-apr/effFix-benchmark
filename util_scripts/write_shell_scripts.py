@@ -29,7 +29,7 @@ mkdir $self_dir_name
 config_path=$self_dir_name/repair.conf
 
 cat > $config_path <<EOL
-pulse_args=...
+pulse_args:...
 EOL
 """
     with open(instrument_file, "w") as f:

@@ -10,5 +10,5 @@ mkdir $self_dir_name
 config_path=$self_dir_name/repair.conf
 
 cat > $config_path <<EOL
-pulse_args=...
+pulse_args:--pulse-model-skip-pattern "p11_path_build\\|execv\\|p11_message_err" --pulse-max-disjuncts 50 --pulse-widen-threshold 1
 EOL

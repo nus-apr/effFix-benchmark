@@ -10,5 +10,5 @@ mkdir $self_dir_name
 config_path=$self_dir_name/repair.conf
 
 cat > $config_path <<EOL
-pulse_args=--pulse-max-disjuncts 100
+pulse_args:--pulse-max-disjuncts 100
 EOL
