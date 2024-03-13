@@ -10,8 +10,7 @@ cd $dir_name
 
 tar_name=snort-instrumented.tar.gz
 download_link=https://raw.githubusercontent.com/nus-apr/efffix-benchmark/main/source/$tar_name
-mkdir tmp
 wget $download_link
-tar -xzf $tar_name -C tmp
-mv tmp/$project_name src
-rm -rf tmp
+# do this so the extracted dir is always named `src`
+mkdir src
+tar -xzf $tar_name -C src --strip-components 1
