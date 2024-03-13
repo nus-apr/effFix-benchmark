@@ -49,3 +49,10 @@ C Programs with memory-errors detected by Infer (Pulse)
 
 - bug_commit_id: Only for linux. Used in setting up project source code. Linux is not packged in tar
     due to its size.
+
+
+## Notes on building some of the benchmark programs.
+
+- For openssl-1, using parallel build (e.g. `make -j32`) can cause undefined symbol errors.
+This is because earlier versions of openssl do not support parallel build.
+See: https://github.com/openssl/openssl/issues/5762
