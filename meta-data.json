@@ -811,7 +811,7 @@
       "line": 254
     },
     "config_script": "config.sh",
-    "config_command": "./autogen.sh && ./configure",
+    "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure",
     "build_command_project": "make -j32 libgrubmods.a",
     "build_command_repair": "make -j32 libgrubmods.a",
     "source_tar": "double-free-1-grub.tar.gz",
@@ -834,7 +834,7 @@
       "line": 406
     },
     "config_script": "config.sh",
-    "config_command": "./autogen.sh && ./configure",
+    "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure",
     "build_command_project": "make -j32 libgrubmods.a",
     "build_command_repair": "make -j32 libgrubmods.a",
     "source_tar": "double-free-2-grub.tar.gz",
@@ -951,7 +951,7 @@
       "line": 274
     },
     "config_script": "config.sh",
-    "config_command": "./autogen.sh && ./configure",
+    "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure",
     "build_dir": "grub-core",
     "build_command_project": "make -j32 xnu.module",
     "build_command_repair": "make -j32 xnu.module",
