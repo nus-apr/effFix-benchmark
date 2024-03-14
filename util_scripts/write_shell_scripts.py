@@ -37,7 +37,7 @@ EOL
     os.system(f"chmod +x {instrument_file}")
 
 
-def write_build_file(build_command: str, build_file):
+def write_build_file(build_command: str, build_dir: str, build_file):
     # note: use double {{ to escape { in f-string
     template = f"""#!/bin/bash
 script_dir="$( cd "$( dirname "${{BASH_SOURCE[0]}}" )" &> /dev/null && pwd )"
@@ -47,7 +47,16 @@ bug_id=$(echo $script_dir | rev | cut -d "/" -f 1 | rev)
 dir_name=$1/$benchmark_name/$project_name/$bug_id
 cd $dir_name/src
 
+"""
+    if build_dir:
+        template += f"""popd {build_dir}
 {build_command}
+ret=$?
+popd
+exit $ret
+"""
+    else:
+        template += f"""{build_command}
 ret=$?
 exit $ret
 """
@@ -149,7 +158,8 @@ def main():
         # write tool independent scripts
         build_file = pjoin(bug_dir, "build.sh")
         build_command = entry.get("build_command_project", "")
-        write_build_file(build_command, build_file)
+        build_dir = entry.get("build_dir", "")
+        write_build_file(build_command, build_dir, build_file)
 
         config_file = pjoin(bug_dir, "config.sh")
         config_command = entry.get("config_command", "")

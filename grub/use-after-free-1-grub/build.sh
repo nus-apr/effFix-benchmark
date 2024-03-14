@@ -6,6 +6,8 @@ bug_id=$(echo $script_dir | rev | cut -d "/" -f 1 | rev)
 dir_name=$1/$benchmark_name/$project_name/$bug_id
 cd $dir_name/src
 
+popd grub-core
 make -j32 normal.module
 ret=$?
+popd
 exit $ret
