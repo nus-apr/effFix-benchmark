@@ -10,5 +10,5 @@ mkdir -p $self_dir_name
 config_path=$self_dir_name/repair.conf
 
 cat > $config_path <<EOL
-pulse_args:--pulse-model-skip-pattern "get_template_path\\|sha1sum_file\\|fopen\\|fseek\\|ftell\\|fread\\|fclose" --pulse-max-disjuncts 50 --pulse-widen-threshold 1
+pulse_args:--headers --pulse-model-skip-pattern "get_template_path\\|sha1sum_file\\|fopen\\|fseek\\|ftell\\|fread\\|fclose" --pulse-max-disjuncts 50 --pulse-widen-threshold 1
 EOL

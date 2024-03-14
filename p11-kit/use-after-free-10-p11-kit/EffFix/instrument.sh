@@ -10,5 +10,5 @@ mkdir -p $self_dir_name
 config_path=$self_dir_name/repair.conf
 
 cat > $config_path <<EOL
-pulse_args:--pulse-model-skip-pattern "p11_tool_getopt\\|p11_kit_be_loud\\|atoi\\|getgrnam\\|p11_message\\|getpwnam\\|p11_tool_usage\\|p11_message_err\\|setgid\\|setgroups\\|setuid\\|asprintf\\|getpid\\|secure_getenv\\|p11_path_build\\|mkdir\\|server_new\\|server_loop\\|" --pulse-max-disjuncts 50 --pulse-widen-threshold 1
+pulse_args:--headers --pulse-model-skip-pattern "p11_tool_getopt\\|p11_kit_be_loud\\|atoi\\|getgrnam\\|p11_message\\|getpwnam\\|p11_tool_usage\\|p11_message_err\\|setgid\\|setgroups\\|setuid\\|asprintf\\|getpid\\|secure_getenv\\|p11_path_build\\|mkdir\\|server_new\\|server_loop\\|" --pulse-max-disjuncts 50 --pulse-widen-threshold 1
 EOL
