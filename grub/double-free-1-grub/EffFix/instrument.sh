@@ -10,5 +10,5 @@ mkdir -p $self_dir_name
 config_path=$self_dir_name/repair.conf
 
 cat > $config_path <<EOL
-pulse_args:--headers --pulse-model-malloc-pattern "grub_malloc\\|grub_zalloc" --pulse-model-free-pattern "grub_free\\|yylex_destroy" --pulse-model-skip-pattern "yyset_extra\\|grub_script_lexer_yywrap" --pulse-max-disjuncts 50
+pulse_args:--headers --pulse-model-malloc-pattern "grub_malloc\\\|grub_zalloc" --pulse-model-free-pattern "grub_free\\\|yylex_destroy" --pulse-model-skip-pattern "yyset_extra\\\|grub_script_lexer_yywrap" --pulse-max-disjuncts 50
 EOL
