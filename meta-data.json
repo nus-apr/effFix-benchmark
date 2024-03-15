@@ -826,7 +826,7 @@
     "source": {
       "src-file": "grub-core/io/lzopio.c",
       "procedure": "test_header",
-      "line": 370
+      "line": 377
     },
     "sink": {
       "src-file": "grub-core/io/lzopio.c",
@@ -948,7 +948,7 @@
     "sink": {
       "src-file": "loader/i386/xnu.c",
       "procedure": "grub_xnu_devprop_add_property",
-      "line": 274
+      "line": 273
     },
     "config_script": "config.sh",
     "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure",
@@ -972,7 +972,7 @@
     "sink": {
       "src-file": "disk/scsi.c",
       "procedure": "grub_scsi_open",
-      "line": 619
+      "line": 620
     },
     "config_script": "config.sh",
     "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure",
@@ -1068,7 +1068,7 @@
     "sink": {
       "src-file": "tools/lxc_execute.c",
       "procedure": "main",
-      "line": 250
+      "line": 247
     },
     "config_script": "config.sh",
     "config_command": "./autogen.sh && CFLAGS='-Wno-error' ./configure --disable-dependency-tracking",
@@ -1116,7 +1116,7 @@
     "sink": {
       "src-file": "p11-kit/server.c",
       "procedure": "main",
-      "line": 680
+      "line": 681
     },
     "config_script": "config.sh",
     "config_command": "./autogen.sh && ./configure --disable-dependency-tracking",
