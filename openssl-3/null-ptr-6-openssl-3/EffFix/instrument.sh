@@ -10,5 +10,5 @@ mkdir -p $self_dir_name
 config_path=$self_dir_name/repair.conf
 
 cat > $config_path <<EOL
-pulse_args:--pulse-max-disjuncts 50 --pulse-model-malloc-pattern CRYPTO_malloc --pulse-model-free-pattern CRYPTO_free --pulse-model-realloc-pattern CRYPTO_realloc --pulse-skip-procedures 'test_single_eval\\\|openssl_add_all_*'
+pulse_args:--pulse-max-disjuncts 50 --pulse-model-malloc-pattern CRYPTO_malloc --pulse-model-free-pattern CRYPTO_free --pulse-model-realloc-pattern CRYPTO_realloc --pulse-skip-procedures 'test_single_eval\|openssl_add_all_*'
 EOL
