@@ -550,7 +550,7 @@
     "build_script": "build.sh",
     "config_command": "make defconfig",
     "build_command_project": "make -j32 drivers/gpu/drm/drm_framebuffer.o",
-    "build_command_repair": "make -j32 -C tools/objtool elf.o",
+    "build_command_repair": "make -j32 --keep-going -C tools/objtool elf.o",
     "deps": ["bc", "gcc", "clang", "libssl-dev", "libelf-dev"],
     "bug_commit_id": "v5.0-rc8"
   },
@@ -574,7 +574,7 @@
     "build_script": "build.sh",
     "config_command": "make defconfig",
     "build_command_project": "make -j32 drivers/gpu/drm/drm_framebuffer.o",
-    "build_command_repair": "make -j32 -C tools/objtool orc_gen.o",
+    "build_command_repair": "make -j32 --keep-going -C tools/objtool orc_gen.o",
     "deps": ["bc", "gcc", "clang", "libssl-dev", "libelf-dev"],
     "bug_commit_id": "v5.0-rc8"
   },
